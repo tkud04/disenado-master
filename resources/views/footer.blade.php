@@ -7,8 +7,8 @@
 								<div class="logo">
 									<a href="{{url('/')}}"><img src="{{asset('img/logo/logo-white.png')}}" alt=""></a>
 								</div>
-								<p>'LuxuryAffairs' and the 'LuxuryAffairs' logo are trade marks of LuxuryAffairs UK Limited and are registered in numerous jurisdictions around the world.
-									<br>© Copyright 2018 LuxuryAffairs UK Limited. All rights reserved.</p>
+								<p>'Disenado' and the 'Disenado' logo are trade marks of Disenado NG Limited and are registered in numerous jurisdictions around the world.
+									<br>© Copyright 2018 Disenado NG Limited. All rights reserved.</p>
 								<div class="social-icon">
 									<span><a href="#"><i class="fa fa-facebook"></i></a></span>
 									<span><a href="#"><i class="fa fa-twitter"></i></a></span>
@@ -26,14 +26,15 @@
 									<h4 class="title-footer">Contact Us</h4>
 									<ul class="Column-one first-col">
 										<li><i class="fa fa-map-marker"></i>
-											<a href="#">LUXURY AFFAIRS</a> London Oxford Street 012 United Kingdom.
+											<a href="#">DISENADO </a> Ayoola Street, Oworonshoki, Lagos
 										</li>
 										<li><i class="fa fa-envelope"></i>
-											<a href="#">emailluxury@gmail.com </a><br>  
-											<a href="#">emailsupport@gmail.com</a>
+											<a href="#">info@disenado.com.ng </a><br>  
+											<a href="#">jide@disenado.com.ng</a>
+											<a href="#">tobi@disenado.com.ng</a>
 										</li>  
-										<li><i class="fa fa-phone"></i>(+92) 3456 7890
-											<br>(+92) 1234 5678
+										<li><i class="fa fa-phone"></i>(+234) 8024204576
+											<br>(+234) 7054291601
 										</li>
 									</ul>
 								</div>
@@ -60,7 +61,7 @@
 						<div class="copyright-area">
 							<div class="col-md-6 col-sm-6 col-xs-12">
 								<div class="copyright">
-									<p>Copyright &copy; 2018 <a href="#" target="_blank">LuxuryAffairs</a>. All Right Reserved.</p>   
+									<p>Copyright &copy; 2018 <a href="#" target="_blank">Disenado</a>. All Rights Reserved.</p>   
 								</div>
 							</div>
 							<div class="col-md-6 col-sm-6 col-xs-12">
