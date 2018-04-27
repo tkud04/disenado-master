@@ -111,10 +111,10 @@
 								</div>
 								<div class="col-md-4 col-sm-4 col-xs-12">
 									<div class="lane-banner">
-										<a href="#"><img src="{{asset('img/banner/fashion-shoes.jpg')}}" alt=""/></a>
+										<a href="#"><img src="{{asset('img/laimages/phone1_1.jpg')}}" alt=""/></a>
 									</div>
 									<div class="lane-banner">
-										<a href="#"><img src="{{asset('img/banner/fashion-bags.jpg')}}" alt=""/></a>
+										<a href="#"><img src="{{asset('img/laimages/watch1_1.jpg')}}" alt=""/></a>
 									</div>
 								</div>
 							</div>
@@ -123,14 +123,14 @@
 							<div class="col-md-6 col-sm-6 col-xs-12">
 								<div class="slide-banar-5 line-fasion">
 									<a href="#">
-										<img src="{{asset('img/fashion/fashion-wathches.jpg')}}" alt="">
+										<img src="{{asset('img/laimages/laptop1_1.jpg')}}" alt="">
 									</a>
 								</div>
 							</div>
 							<div class="col-md-6 col-sm-6 col-xs-12">
 								<div class="slide-banar-5 line-fasion">
 									<a href="#">
-										<img src="{{asset('img/fashion/fashion-glases.jpg')}}" alt="">
+										<img src="{{asset('img/laimages/tab1_1.jpg')}}" alt="">
 									</a>
 								</div>
 							</div>
