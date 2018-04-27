@@ -617,7 +617,7 @@
 										<tfoot>
 											<tr class="cart-subtotal">
 												<th>Cart Subtotal</th>
-												<td><span class="amount">#8358;{{$ct}}</span></td>
+												<td><span class="amount">&#8358;{{$ct}}</span></td>
 											</tr>
 											<tr class="shipping">
 												<th>Shipping</th>
@@ -626,7 +626,7 @@
 															<li>
 																<input type="radio" name="with-shipping" id = "with-shipping" checked/> 
 																<label>
-																	Flat Rate: <span class="amount">#8358;2500.00</span>
+																	Flat Rate: <span class="amount">&#8358;2500.00</span>
 																</label>
 															</li>
 															<li></li>

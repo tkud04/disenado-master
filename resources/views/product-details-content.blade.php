@@ -53,7 +53,7 @@
 											</span>
 										</div>
 										<span class="amount">
-											#8358;{{$p['price']}}
+											&#8358;{{$p['price']}}
 										</span>
 										<p>{{$p['description']}}</p>
 										<div id=field1>
@@ -140,8 +140,8 @@
 													</div>
 													<h4 class="name"><a href="#">{{$rp['name']}}</a></h4>
 													<span class="amount">
-														<del><span class="amount-del">#8358;{{$rp['price'] + 200}}</span></del>
-														#8358;{{$rp['price']}}
+														<del><span class="amount-del">&#8358;{{$rp['price'] + 200}}</span></del>
+														&#8358;{{$rp['price']}}
 													</span>
 													<div class="add-to-cart">
 														<a href="{{$cart_url}}"><i class="fa fa-shopping-cart"></i></a>

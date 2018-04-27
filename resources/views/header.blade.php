@@ -74,7 +74,7 @@ img.logog{
 										<li>
 											<h3>Currencies</h3>
 											<span class="currencies">
-												<a href="#"><span>&#8358;</span> - NGN</a>
+												<a href="#"><span>&&#8358;</span> - NGN</a>
 											</span>
 										</li>
 									</ul>
