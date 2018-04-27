@@ -112,7 +112,7 @@
 														</div>
 													</div>
 												</div>
-												<h4 class="name"><a href="#">{{$p['name']}}</a></h4>
+												<h4 class="name"><a href="{{$url}}">{{$p['name']}}</a></h4>
 												<span class="amount">
 													<del><span class="amount-del">&#8358;{{$p['price'] + 200}}</span></del>
 													&#8358;{{$p['price']}}
