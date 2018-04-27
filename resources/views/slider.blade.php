@@ -63,7 +63,7 @@
 												<div id="htmlcaption2" class="nivo-html-caption slider-caption-2">
 													<div class="slider-progress"></div> 
 													<div class="slide2-text " >
-														<div class="middle-text ">
+														<div class="middle-text " style="color: #fff !important;">
 															<div class="cap-dec " >
 																<div class="first-f">
 																	<h3 class="first">BEST DEALS </h3>
@@ -82,11 +82,11 @@
 														</div>   
 													</div>
 												</div>
-												<!-- Slider Caption 2 -->
+												<!-- Slider Caption 3 -->
 												<div id="htmlcaption3" class="nivo-html-caption slider-caption-3">
 													<div class="slider-progress"></div> 
 													<div class="slide3-text wow zoomIn " data-wow-duration="0.1s" data-wow-delay="0.3s">
-														<div class="middle-text ">
+														<div class="middle-text " style="color: #fff !important;">
 															<div class="cap-dec " >
 																<div class="first-f">
 																	<h3 class="first">BEST DEALS </h3>

@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
-		<title>@yield("title") || Disenado - Your Favorite Online Retail Store</title>
+		<title>@yield("title") || Disenado - Laptops, Tablets and More</title>
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- favicon
