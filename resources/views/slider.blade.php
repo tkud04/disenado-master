@@ -31,10 +31,10 @@
 											<div class="slider-container theme-default">
 												<!-- Slider Image -->
 												<div id="mainSlider" class="nivoSlider slider-image">
-													<img src="{{asset('img/nn/slider/slide-mini-1.png')}}" alt="main slider"  title="#htmlcaption1"/>
-													<img src="{{asset('img/nn/slider/slide-mini-2.png')}}" alt="main slider"  title="#htmlcaption2"/>
-													<img src="{{asset('img/nn/slider/slide-mini-3.png')}}" alt="main slider"  title="#htmlcaption3"/>
-													<img src="{{asset('img/nn/slider/slide-mini-4.png')}}" alt="main slider"  title="#htmlcaption3"/>
+													<img src="{{asset('img/slider/nn/slide-mini-1.png')}}" alt="main slider"  title="#htmlcaption1"/>
+													<img src="{{asset('img/slider/nn/slide-mini-2.png')}}" alt="main slider"  title="#htmlcaption2"/>
+													<img src="{{asset('img/slider/nn/slide-mini-3.png')}}" alt="main slider"  title="#htmlcaption3"/>
+													<img src="{{asset('img/slider/nn/slide-mini-4.png')}}" alt="main slider"  title="#htmlcaption3"/>
 												</div>
 												<!-- Slider Caption 1 -->
 												<div id="htmlcaption1" class="nivo-html-caption slider-caption-1">
@@ -66,12 +66,12 @@
 														<div class="middle-text ">
 															<div class="cap-dec " >
 																<div class="first-f">
-																	<h3 class="first">HOT & TRENDY CLOTHES </h3>
+																	<h3 class="first">BEST DEALS </h3>
 																</div>
 															</div>   
 															<div class="cap-title ">
 																<div class="first-f">
-																	<h3 class="decond">FOR REAL WOMEN</h3>
+																	<h3 class="decond">FOR THE TECH SAVVY</h3>
 																</div>
 															</div> 
 															<div class="sl-shop-link ">
@@ -89,12 +89,12 @@
 														<div class="middle-text ">
 															<div class="cap-dec " >
 																<div class="first-f">
-																	<h3 class="first">HOT & TRENDY CLOTHES </h3>
+																	<h3 class="first">BEST DEALS </h3>
 																</div>
 															</div>   
 															<div class="cap-title ">
 																<div class="first-f">
-																	<h3 class="decond">FOR REAL MEN</h3>
+																	<h3 class="decond">FOR THE TECH SAVVY</h3>
 																</div>
 															</div> 
 															<div class="sl-shop-link ">
