@@ -154,7 +154,7 @@
 											</div>
 										</div>
 										<div class="product-details-shop ">
-											<h4 class="name"><a href="#">{{$p['name']}}</a></h4>
+											<h4 class="name"><a href="{{$url}}">{{$p['name']}}</a></h4>
 											<div class="reating">
 												<span class="star-reating">
                                                     <i class="fa fa-star" aria-hidden="true"></i>
