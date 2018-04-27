@@ -114,8 +114,8 @@
 												</div>
 												<h4 class="name"><a href="#">{{$p['name']}}</a></h4>
 												<span class="amount">
-													<del><span class="amount-del">${{$p['price'] + 200}}</span></del>
-													${{$p['price']}}
+													<del><span class="amount-del">&#8358;{{$p['price'] + 200}}</span></del>
+													&#8358;{{$p['price']}}
 												</span>
 												<div class="add-to-cart">
 													<a href="{{$cart_url}}"><i class="fa fa-shopping-cart"></i></a>
@@ -167,7 +167,7 @@
 											</div>
 											<span class="amount">
 												<del><span class="amount-del">{{$p['price'] + 20}}</span></del>
-												${{$p['price']}}
+												&#8358;{{$p['price']}}
 											</span>
 											<p>{{$p['description']}}</p>
 											<div class="product-action">
