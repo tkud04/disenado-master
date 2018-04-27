@@ -49,7 +49,7 @@
 											</ul>
 										</div>
 									</div>
-									<h4 class="name"><a href="#">{{$t['name']}}</a></h4>
+									<h4 class="name"><a href="{{$url}}">{{$t['name']}}</a></h4>
 									<span class="amount">
 										<del><span class="amount-del">${{$t['price'] + 200}}</span></del>
 										${{$t['price']}}
