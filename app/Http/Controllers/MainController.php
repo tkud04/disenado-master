@@ -125,7 +125,7 @@ class MainController extends Controller {
 		}
 		
 		$cart = $this->helpers->getCart($user);
-    	return view('cart','user',compact(['cart','user']));
+    	return view('cart',compact(['cart','user']));
     }
 	
 	/**

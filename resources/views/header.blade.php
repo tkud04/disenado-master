@@ -83,6 +83,7 @@ img.logog{
 									<a class="icon-heaher" href="#"><i class="fa fa-user"></i></a>
 									<ul>
 									    @if(isset($user) && $user != null)
+										<li><a href="#">Welcome, {{$user->fname}}</a></li>
 										<li><a href="{{url('cart')}}"><i class="fa fa-shopping-cart"></i>My Cart</a></li>
 										<li><a href="{{url('logout')}}"><i class="fa fa-eye-slash"></i>Sign out</a></li>
 										@else
@@ -111,6 +112,7 @@ img.logog{
 										<li class=""><a class="main-a" href="{{url('shop')}}">Shop</a></li>
 										<li><a class="main-a" href="{{url('contact')}}">Contact</a></li>
 										@if(isset($user) && $user != null)
+										<li><a href="#">Welcome, {{$user->fname}}</a></li>
 										<li><a class="main-a" href="{{url('cart')}}">My Cart</a></li>
 										<li><a class="main-a" href="{{url('logout')}}">Sign out</a></li>
 										@else
