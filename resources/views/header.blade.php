@@ -79,13 +79,17 @@ img.logog{
 										</li>
 									</ul>
 								</div>
-								<!--<div class="header-cart">
+								<div class="header-cart">
 									<a class="icon-heaher" href="#"><i class="fa fa-user"></i></a>
 									<ul>
-										<li><a href="#"><i class="fa fa-shopping-cart"></i>My Cart</a></li>
-										<li><a href="#"><i class="fa fa-hand-o-right"></i>Check Out</a></li>
+									    @if(isset($user) && $user != null)
+										<li><a href="{{url('cart')}}"><i class="fa fa-shopping-cart"></i>My Cart</a></li>
+										<li><a href="{{url('logout')}}"><i class="fa fa-eye-slash"></i>Sign out</a></li>
+										@else
+										<li><a href="#" id="legbe"><i class="fa fa-eye"></i>Sign in</a></li>
+									    @endif
 									</ul>
-								</div>-->
+								</div>
 							</div>
 						</div>
 					</div>
