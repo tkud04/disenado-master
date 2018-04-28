@@ -78,8 +78,8 @@ class Helper implements HelperContract
                                                       'city' => $data['city'], 
                                                       'state' => $data['state'], 
                                                       'zipcode' => $data['zipcode'], 
-                                                      'country' => $data['country'], 
-                                                      'company' => $data['company'], 
+                                                      'country' => "NG", 
+                                                      'company' => 'none', 
                                                     ]);
               return $rd;
           }
@@ -131,12 +131,12 @@ class Helper implements HelperContract
 		    if($ret != null) $ret->delete();                                
           } 
 
-		  function getCart()
+		  function getCart($user)
           {
 			  $ip = getenv("REMOTE_ADDR");
 			  $ret = [];
 			  
-          	  $carts = Cart::where('user_id',$ip)->get();
+          	  $carts = Cart::where('user_id',$user->id)->get();
 					   
 		    if($carts != null)
 			{

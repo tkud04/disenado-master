@@ -26,7 +26,14 @@ class MainController extends Controller {
 	 */
 	public function index()
     {
-		$cart = $this->helpers->getCart();
+		$user = null;
+		
+		if(Auth::check())
+		{
+			$user = Auth::user();
+		}
+		
+		$cart = $this->helpers->getCart($user);
 		$trending = $this->helpers->getProducts(); shuffle($trending);
 		$bs = $this->helpers->getProducts(); shuffle($bs);
 		$os = $this->helpers->getProducts(); shuffle($os);
@@ -43,8 +50,15 @@ class MainController extends Controller {
 	 */
 	public function getShop()
     {
+		$user = null;
+		
+		if(Auth::check())
+		{
+			$user = Auth::user();
+		}
+		
     	$ret = $this->helpers->getProducts();
-		$cart = $this->helpers->getCart();
+		$cart = $this->helpers->getCart($user);
 		return view('shop',compact(['ret','cart']));
     }
 	
@@ -55,6 +69,13 @@ class MainController extends Controller {
 	 */
 	public function getProducts($id="")
     {
+		$user = null;
+		
+		if(Auth::check())
+		{
+			$user = Auth::user();
+		}
+		
 		if($id == "")
 		{
 			return redirect()->intended('shop');
@@ -64,7 +85,7 @@ class MainController extends Controller {
 		{
 			$p = $this->helpers->getProduct($id);
 			$related_products = $this->helpers->getProducts(); shuffle($related_products);
-			$cart = $this->helpers->getCart();
+			$cart = $this->helpers->getCart($user);
 			return view('product-details',compact(['p','cart','related_products']));
 		}
 		
@@ -78,7 +99,14 @@ class MainController extends Controller {
 	 */
 	public function getContact()
     {
-		$cart = $this->helpers->getCart();
+		$user = null;
+		
+		if(Auth::check())
+		{
+			$user = Auth::user();
+		}
+		
+		$cart = $this->helpers->getCart($user);
     	return view('contact',compact(['cart']));
     }
 	
@@ -89,7 +117,14 @@ class MainController extends Controller {
 	 */
 	public function getCart()
     {
-		$cart = $this->helpers->getCart();
+		$user = null;
+		
+		if(Auth::check())
+		{
+			$user = Auth::user();
+		}
+		
+		$cart = $this->helpers->getCart($user);
     	return view('cart',compact(['cart']));
     }
 	
@@ -100,9 +135,16 @@ class MainController extends Controller {
 	 */
 	public function getAddToCart($id)
     {
+		$user = null;
+		
+		if(Auth::check())
+		{
+			$user = Auth::user();
+		}
+		
 		if($id == "")
 		{
-			$cart = $this->helpers->getCart();
+			$cart = $this->helpers->getCart($user);
 			return view('cart',compact(['cart']));
 		}
 		
@@ -110,7 +152,7 @@ class MainController extends Controller {
 		{
 			$qty = 1;
 			$ip = getenv("REMOTE_ADDR");
-			$data = ['user_id' => $ip,'product_id' => $id,'qty' => $qty];
+			$data = ['user_id' => $user->id,'product_id' => $id,'qty' => $qty];
 			$status = $this->helpers->addToCart($data);
 			Session::flash("add-to-cart-status",$status);
 			return redirect()->intended('shop');
@@ -126,9 +168,16 @@ class MainController extends Controller {
 	 */
 	public function getRemoveFromCart($id="")
     {
+		$user = null;
+		
+		if(Auth::check())
+		{
+			$user = Auth::user();
+		}
+		
 		if($id == "")
 		{
-			$cart = $this->helpers->getCart();
+			$cart = $this->helpers->getCart($user);
 			return view('cart',compact(['cart']));
 		}
 		
@@ -136,7 +185,7 @@ class MainController extends Controller {
 		{
 			$qty = 1;
 			$ip = getenv("REMOTE_ADDR");
-			$data = ['user_id' => $ip,'product_id' => $id,'qty' => $qty];
+			$data = ['user_id' => $user->id,'product_id' => $id,'qty' => $qty];
 			$status = $this->helpers->removeFromCart($data);
 			Session::flash("remove-from-cart-status",$status);
 			return redirect()->intended('shop');
@@ -150,7 +199,14 @@ class MainController extends Controller {
 	 */
 	public function getCheckout()
     {
-		$cart = $this->helpers->getCart();
+		$user = null;
+		
+		if(Auth::check())
+		{
+			$user = Auth::user();
+		}
+		
+		$cart = $this->helpers->getCart($user);
     	return view('checkout',compact(['cart']));
     }
 
@@ -161,8 +217,23 @@ class MainController extends Controller {
 	 */
 	public function getAddProduct()
     {
-		$cart = $this->helpers->getCart();
-    	return view('a_p',compact(['cart']));
+		$user = null;
+		
+		if(Auth::check())
+		{
+			$user = Auth::user();
+			
+			if($user->role == "admin")
+			{
+			    $cart = $this->helpers->getCart($user);
+    	        return view('a_p',compact(['cart']));
+			}
+		}
+		
+		else
+		{
+			return redirect()->intended('/');
+		}
     } 
 	/**
 	 * Show the application Checkout screen to the user.
@@ -171,7 +242,14 @@ class MainController extends Controller {
 	 */
     public function postAddProduct(Request $request)
     {
-        $req = $request->all();
+		$user = null;
+		
+		if(Auth::check())
+		{
+			$user = Auth::user();
+			if($user->role == "admin")
+			{
+				       $req = $request->all();
         //dd($req);
         
         $validator = Validator::make($req, [
@@ -216,6 +294,17 @@ class MainController extends Controller {
 			Session::flash("add-product-status","success");
 			return redirect()->intended('a-p');
          }
+			}
+			else
+			{
+				return redirect()->intended('/');
+			}
+		}
+		
+		else
+		{
+			return redirect()->intended('/');
+		}
                  
     }    
 

@@ -51,7 +51,7 @@ class LoginController extends Controller {
             $user = Auth::user();
             
             
-            if($user->enabled == "no")
+            if(isset($user->enabled) && $user->enabled == "no")
             {
             	$ret = "disabled";
                 $this->getLogout();
@@ -66,7 +66,7 @@ class LoginController extends Controller {
             }
            
            
-           if($user->role == "superadmin"){return redirect()->intended('admin');}
+           if($user->role == "admin"){return redirect()->intended('/');}
             }
          }
          
@@ -79,15 +79,11 @@ class LoginController extends Controller {
         //dd($req);
         
         $validator = Validator::make($req, [
-                             'country' => 'required|not_in:none',
+                             'password' => 'required|confirmed',
                              'email' => 'required|email',
                              'fname' => 'required',
                              'lname' => 'required',
-                             'phone' => 'required|numeric',
-                             'company' => 'required',
-                             'address' => 'required',
-                             'town' => 'required|numeric',
-                             'zipcode' => 'required',
+                             #'phone' => 'required|numeric',
                              #'g-recaptcha-response' => 'required',
                            # 'terms' => 'accepted',
          ]);
@@ -103,17 +99,22 @@ class LoginController extends Controller {
          else
          {
             $req['role'] = "user";
+            $req['phone'] = "";
             
                        #dd($req);            
 
             $user =  $this->helpers->createUser($req); 
 			$req['user_id'] = $user->id;
+			$req['address'] = "";
+			$req['city'] = "";
+			$req['state'] = "";
+			$req['zipcode'] = "";
             $ud =  $this->helpers->createUserData($req); 
          
              //after creating the user, send back to the registration view with a success message
-             $this->helpers->sendEmail($user->email,'Welcome To LuxuryAffairs!',['name' => $user->fname, 'id' => $user->id],'emails.welcome','view');
+             $this->helpers->sendEmail($user->email,'Welcome To Disenado!',['name' => $user->fname, 'id' => $user->id],'emails.welcome','view');
              Session::flash("signup-status", "success");
-             return redirect()->intended('checkout');
+             return redirect()->intended('/');
           }
     }
     
