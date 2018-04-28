@@ -86,7 +86,8 @@ img.logog{
 										<li><a href="{{url('cart')}}"><i class="fa fa-shopping-cart"></i>My Cart</a></li>
 										<li><a href="{{url('logout')}}"><i class="fa fa-eye-slash"></i>Sign out</a></li>
 										@else
-										<li><a href="#" class="legbe"><i class="fa fa-eye"></i>Sign in</a></li>
+										<li><a href="#" class="legbe"><i class="fa fa-key"></i>Sign in</a></li>
+										<li><a href="#" class="legbe2"><i class="fa fa-plug"></i>Sign up</a></li>
 									    @endif
 									</ul>
 								</div>
@@ -113,7 +114,8 @@ img.logog{
 										<li><a class="main-a" href="{{url('cart')}}">My Cart</a></li>
 										<li><a class="main-a" href="{{url('logout')}}">Sign out</a></li>
 										@else
-										<li><a class="main-a legbe" href="#">SIgn in</a></li>
+										<li><a class="main-a legbe" href="#">Sign in</a></li>
+										<li><a class="main-a legbe2" href="#">Sign up</a></li>
 									    @endif
 
                                         </ul>

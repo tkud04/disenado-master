@@ -158,7 +158,7 @@
 									<div id="checkout-login" class="coupon-content">
 										<div class="coupon-info">
 											<p class="coupon-text">Returning customer? Sign in here.</p>
-											<form action="#">
+											<form action="#" id="lform">
 											   {{csrf_field()}}
 												<p class="form-row-first">
 													<label>Username or email <span class="required">*</span></label>
@@ -167,6 +167,59 @@
 												<p class="form-row-last">
 													<label>Password  <span class="required">*</span></label>
 													<input type="password" name="password" />
+												</p>
+												<p class="form-row">					
+													<input type="submit" value="Login" />
+													<label>
+														<input type="checkbox" name="remember_me" />
+														 Remember me 
+													</label>
+												</p>
+												<p class="lost-password">
+													<a href="#">Lost your password?</a>
+												</p>
+											</form>
+										</div>
+									</div>
+								</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Register Modal -->
+			<div id="registerModal" class="modal fade" role="dialog">
+				<div class="modal-dialog">
+					<!-- Modal content-->
+					<div class="modal-content">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<div class="modal-body">
+								<div class="well">
+									<div id="checkout-login" class="coupon-content">
+										<div class="coupon-info">
+											<p class="coupon-text">New customer? Sign up here!</p>
+											<form action="#" id="rform">
+											   {{csrf_field()}}
+												<p class="form-row-first">
+													<label>First Name <span class="required">*</span></label>
+													<input type="text" name="fname" placeholder="First name" value="{{old('fname')}}" />
+												</p>
+												<p class="form-row-first">
+													<label>Last Name <span class="required">*</span></label>
+													<input type="text" name="lname" placeholder="Last name" value="{{old('lname')}}" />
+												</p>
+												<p class="form-row-first">
+													<label>Email address <span class="required">*</span></label>
+													<input type="email" name="email" placeholder="Email address" value="{{old('email')}}" />
+												</p>
+												<p class="form-row-last">
+													<label>Password  <span class="required">*</span></label>
+													<input type="password" name="password" />
+												</p>
+												<p class="form-row-last">
+													<label>Confirm Password  <span class="required">*</span></label>
+													<input type="password" name="password_confirmation" />
 												</p>
 												<p class="form-row">					
 													<input type="submit" value="Login" />

@@ -363,10 +363,27 @@
     }
     
     
+    $('a.legbe2').click(function(e){
+		e.preventDefault();
+		$('#registerModal').modal("show");
+	});
+
     $('a.legbe').click(function(e){
 		e.preventDefault();
 		$('#loginModal').modal("show");
 	});
+
+    $('#lform').submit(function(e){
+		e.preventDefault();
+		//logic here
+	});
+
+    $('#rform').submit(function(e){
+		e.preventDefault();
+		//logic here
+	});
+	
+	
     
     
     
