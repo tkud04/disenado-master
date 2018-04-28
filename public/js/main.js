@@ -362,7 +362,9 @@
      }  
     }
     
-    
+    $('#r-loading').hide();
+    $('#l-loading').hide();
+	
     $('a.legbe2').click(function(e){
 		e.preventDefault();
 		$('#registerModal').modal("show");
@@ -381,6 +383,7 @@
     $('#rform').submit(function(e){
 		e.preventDefault();
 		//logic here
+		
 	});
 	
 	

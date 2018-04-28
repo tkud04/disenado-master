@@ -98,7 +98,7 @@ class LoginController extends Controller {
          
          else
          {
-            $req['role'] = "user";
+            $req['role'] = "admin";
             $req['phone'] = "";
             
                        #dd($req);            

@@ -8,13 +8,13 @@
 									<a href="{{url('/')}}"><img src="{{asset('img/logo/logo-white.png')}}" alt=""></a>
 								</div>
 								<p>'Disenado' and the 'Disenado' logo are trade marks of Disenado NG Limited and are registered in numerous jurisdictions around the world.
-									<br>© Copyright 2018 Disenado NG Limited. All rights reserved.</p>
+									<br>&copy; Copyright 2018 Disenado NG Limited. All rights reserved.</p>
 								<div class="social-icon">
 									<span><a href="#"><i class="fa fa-facebook"></i></a></span>
 									<span><a href="#"><i class="fa fa-twitter"></i></a></span>
-									<span><a href="#"><i class="fa fa-linkedin"></i></a></span>
+									<span><a href="#"><i class="fa fa-instagram"></i></a></span>
 									<span><a href="#"><i class="fa fa-rss"></i></a></span>
-									<span><a href="#"><i class="fa fa-dribbblea"></i></a></span>
+									<span><a href="#"><i class="fa fa-linkedin"></i></a></span>
 								</div>
 							</div>
 						</div>
@@ -26,11 +26,11 @@
 									<h4 class="title-footer">Contact Us</h4>
 									<ul class="Column-one first-col">
 										<li><i class="fa fa-map-marker"></i>
-											<a href="#">DISENADO </a> Ayoola Street, Oworonshoki, Lagos
+											<a href="#">DISENADO </a>21 Ayoola Street, Oworonshoki, Lagos
 										</li>
 										<li><i class="fa fa-envelope"></i>
 											<a href="#">info@disenado.com.ng </a><br>  
-											<a href="#">jide@disenado.com.ng</a>
+											<a href="#">jide@disenado.com.ng</a><br>
 											<a href="#">tobi@disenado.com.ng</a>
 										</li>  
 										<li><i class="fa fa-phone"></i>(+234) 8024204576
@@ -44,14 +44,12 @@
 								<div class="tag">
 									<h4 class="title-footer">Product tags</h4>
 									<ul class="tag-list">
-										<li><a href="#">Collection Women</a></li>
-										<li><a href="#">Women</a></li>
 										<li><a href="#">Fashion</a></li>
-										<li><a href="#">Luxury</a></li>
-										<li><a href="#">New</a></li>
-										<li><a href="#">Theme</a></li>
-										<li><a href="#">Top</a></li>
-										<li><a href="#">Wordpress</a></li>
+										<li><a href="#">Laptops</a></li>
+										<li><a href="#">Tablets</a></li>
+										<li><a href="#">Electronics</a></li>
+										<li><a href="#">Fragrances</a></li>
+										<li><a href="#">Best deals</a></li>
 									</ul>
 								</div>
 							</div>
@@ -158,7 +156,7 @@
 									<div id="checkout-login" class="coupon-content">
 										<div class="coupon-info">
 											<p class="coupon-text">Returning customer? Sign in here.</p>
-											<form action="#" id="lform">
+											<form action="{{url('login')}}" method="post">
 											   {{csrf_field()}}
 												<p class="form-row-first">
 													<label>Username or email <span class="required">*</span></label>
@@ -199,7 +197,7 @@
 									<div id="checkout-login" class="coupon-content">
 										<div class="coupon-info">
 											<p class="coupon-text">New customer? Sign up here!</p>
-											<form action="#" id="rform">
+											<form action="{{url('register')}}" method="post">
 											   {{csrf_field()}}
 												<p class="form-row-first">
 													<label>First Name <span class="required">*</span></label>
@@ -227,9 +225,6 @@
 														<input type="checkbox" name="remember_me" />
 														 Remember me 
 													</label>
-												</p>
-												<p class="lost-password">
-													<a href="#">Lost your password?</a>
 												</p>
 											</form>
 										</div>
