@@ -21,11 +21,11 @@
 									<input name="brand" type="text" value="{{old('brand')}}">									
 									Category****<br/>
 									<select name="category">
-									  <option value="clothes">CLOTHES</option>
-									  <option value="shoes">SHOES</option>
-									  <option value="bags">BAGS</option>
-									  <option value="jewellery">JEWELLERY</option>
-									  <option value="watches">WATCHES</option>
+									  <option value="fashion">FASHION</option>
+									  <option value="laptops">LAPTOPS</option>
+									  <option value="tablets">TABLETS</option>
+									  <option value="electronics">ELECTRONICS</option>
+									  <option value="fragrances">FRAGRANCES</option>
 									</select>
 								</div>
 							</div>
