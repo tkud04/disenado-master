@@ -74,7 +74,7 @@ img.logog{
 										<li>
 											<h3>Currencies</h3>
 											<span class="currencies">
-												<a href="#"><span>&&#8358;</span> - NGN</a>
+												<a href="#"><span>&#8358;</span> - NGN</a>
 											</span>
 										</li>
 									</ul>
@@ -86,7 +86,7 @@ img.logog{
 										<li><a href="{{url('cart')}}"><i class="fa fa-shopping-cart"></i>My Cart</a></li>
 										<li><a href="{{url('logout')}}"><i class="fa fa-eye-slash"></i>Sign out</a></li>
 										@else
-										<li><a href="#" id="legbe"><i class="fa fa-eye"></i>Sign in</a></li>
+										<li><a href="#" class="legbe"><i class="fa fa-eye"></i>Sign in</a></li>
 									    @endif
 									</ul>
 								</div>
@@ -109,6 +109,12 @@ img.logog{
 										<li class="active "><a class="main-a" href="{{url('/')}}"><span>Home</span></a></li>
 										<li class=""><a class="main-a" href="{{url('shop')}}">Shop</a></li>
 										<li><a class="main-a" href="{{url('contact')}}">Contact</a></li>
+										@if(isset($user) && $user != null)
+										<li><a class="main-a" href="{{url('cart')}}">My Cart</a></li>
+										<li><a class="main-a" href="{{url('logout')}}">Sign out</a></li>
+										@else
+										<li><a class="main-a legbe" href="#">SIgn in</a></li>
+									    @endif
 
                                         </ul>
                                     </nav>
