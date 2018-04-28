@@ -135,8 +135,9 @@ class Helper implements HelperContract
           {
 			  $ip = getenv("REMOTE_ADDR");
 			  $ret = [];
+			  $carts = null;
 			  
-          	  $carts = Cart::where('user_id',$user->id)->get();
+          	  if($user != null) $carts = Cart::where('user_id',$user->id)->get();
 					   
 		    if($carts != null)
 			{
