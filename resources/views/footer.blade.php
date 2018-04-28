@@ -26,7 +26,7 @@
 									<h4 class="title-footer">Contact Us</h4>
 									<ul class="Column-one first-col">
 										<li><i class="fa fa-map-marker"></i>
-											<a href="#">DISENADO </a>21 Ayoola Street, Oworonshoki, Lagos
+											<a href="#">DISENADO </a> 21 Ayoola Street, Oworonshoki, Lagos
 										</li>
 										<li><i class="fa fa-envelope"></i>
 											<a href="#">info@disenado.com.ng </a><br>  

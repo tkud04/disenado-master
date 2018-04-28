@@ -64,7 +64,7 @@ class Helper implements HelperContract
                                                       'lname' => $data['lname'],                                                      
                                                       'phone' => $data['phone'], 
                                                       'email' => $data['email'], 
-                                                      'role' => $data['email'], 
+                                                      'role' => $data['role'], 
                                                       'password' => bcrypt($data['password']), 
                                                       ]);
                                                       
