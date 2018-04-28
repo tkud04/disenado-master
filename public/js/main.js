@@ -363,7 +363,10 @@
     }
     
     
-    
+    $('a.legbe').click(function(e){
+		e.preventDefault();
+		$('#loginModal').modal("show");
+	});
     
     
     
