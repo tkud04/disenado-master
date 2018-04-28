@@ -39,7 +39,7 @@ class MainController extends Controller {
 		$os = $this->helpers->getProducts(); shuffle($os);
 		$ss = $this->helpers->getProducts(); shuffle($ss);
 
-    	return view('index',compact(['cart','bs','os','ss','trending']));
+    	return view('index',compact(['cart','user','bs','os','ss','trending']));
     }
 	
 	
@@ -59,7 +59,7 @@ class MainController extends Controller {
 		
     	$ret = $this->helpers->getProducts();
 		$cart = $this->helpers->getCart($user);
-		return view('shop',compact(['ret','cart']));
+		return view('shop',compact(['ret','cart','user']));
     }
 	
 	/**
@@ -86,7 +86,7 @@ class MainController extends Controller {
 			$p = $this->helpers->getProduct($id);
 			$related_products = $this->helpers->getProducts(); shuffle($related_products);
 			$cart = $this->helpers->getCart($user);
-			return view('product-details',compact(['p','cart','related_products']));
+			return view('product-details',compact(['p','cart','user','related_products']));
 		}
 		
     	
@@ -107,7 +107,7 @@ class MainController extends Controller {
 		}
 		
 		$cart = $this->helpers->getCart($user);
-    	return view('contact',compact(['cart']));
+    	return view('contact',compact(['cart','user']));
     }
 	
 	/**
@@ -125,7 +125,7 @@ class MainController extends Controller {
 		}
 		
 		$cart = $this->helpers->getCart($user);
-    	return view('cart',compact(['cart']));
+    	return view('cart','user',compact(['cart','user']));
     }
 	
 	/**
@@ -145,7 +145,7 @@ class MainController extends Controller {
 		if($id == "")
 		{
 			$cart = $this->helpers->getCart($user);
-			return view('cart',compact(['cart']));
+			return view('cart','user',compact(['cart','user']));
 		}
 		
 		else
@@ -178,7 +178,7 @@ class MainController extends Controller {
 		if($id == "")
 		{
 			$cart = $this->helpers->getCart($user);
-			return view('cart',compact(['cart']));
+			return view('cart','user',compact(['cart','user']));
 		}
 		
 		else
@@ -207,7 +207,7 @@ class MainController extends Controller {
 		}
 		
 		$cart = $this->helpers->getCart($user);
-    	return view('checkout',compact(['cart']));
+    	return view('checkout',compact(['cart','user']));
     }
 
     /**
@@ -226,7 +226,7 @@ class MainController extends Controller {
 			if($user->role == "admin")
 			{
 			    $cart = $this->helpers->getCart($user);
-    	        return view('a_p',compact(['cart']));
+    	        return view('a_p',compact(['cart','user']));
 			}
 		}
 		
