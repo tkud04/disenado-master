@@ -44,7 +44,7 @@ class LoginController extends Controller {
          else
          {
          	//authenticate this login
-            if(Auth::attempt(['username' => $req['username'],'password' => $req['password']]))
+            if(Auth::attempt(['email' => $req['email'],'password' => $req['password']]))
             {
             	//Login successful
                 
