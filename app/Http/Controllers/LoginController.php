@@ -112,7 +112,7 @@ class LoginController extends Controller {
             $ud =  $this->helpers->createUserData($req); 
          
              //after creating the user, send back to the registration view with a success message
-             $this->helpers->sendEmail($user->email,'Welcome To Disenado!',['name' => $user->fname, 'id' => $user->id],'emails.welcome','view');
+             #$this->helpers->sendEmail($user->email,'Welcome To Disenado!',['name' => $user->fname, 'id' => $user->id],'emails.welcome','view');
              Session::flash("signup-status", "success");
              return redirect()->intended('/');
           }
