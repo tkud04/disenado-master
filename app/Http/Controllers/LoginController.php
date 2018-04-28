@@ -46,31 +46,13 @@ class LoginController extends Controller {
          	//authenticate this login
             if(Auth::attempt(['email' => $req['email'],'password' => $req['password']]))
             {
-            	//Login successful
-                
-            $user = Auth::user();
-            
-            
-            if(isset($user->enabled) && $user->enabled == "no")
-            {
-            	$ret = "disabled";
-                $this->getLogout();
-            }
-            
-            
-            
-            else
-            {
-            	$ret = "ok";
-				return redirect()->intended('/');
-            }
+            	//Login successful               
+               $user = Auth::user();          
            
-           
-           if($user->role == "admin"){return redirect()->intended('/');}
+               if($user->role == "admin"){return redirect()->intended('/');}
+               else{return redirect()->intended('/');}
             }
-         }
-         
-        return $ret;         
+         }        
     }
 	
     public function postRegister(Request $request)
