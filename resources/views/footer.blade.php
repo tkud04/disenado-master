@@ -222,7 +222,7 @@
 													<input type="password" name="password_confirmation" />
 												</p>
 												<p class="form-row">					
-													<input type="submit" value="Login" />
+													<input type="submit" value="Register" />
 													<label>
 														<input type="checkbox" name="remember_me" />
 														 Remember me 
