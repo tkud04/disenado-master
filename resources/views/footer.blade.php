@@ -5,7 +5,7 @@
 						<div class="col-md-12 col-sm-12 col-xs-12">
 							<div class="footer-top">
 								<div class="logo">
-									<a href="{{url('/')}}"><img src="{{asset('img/logo/logo-white.png')}}" alt=""></a>
+									<a href="{{url('/')}}"><img src="{{asset('img/logo.png')}}" alt=""></a>
 								</div>
 								<p>'Disenado' and the 'Disenado' logo are trade marks of Disenado NG Limited and are registered in numerous jurisdictions around the world.
 									<br>&copy; Copyright 2018 Disenado NG Limited. All rights reserved.</p>
