@@ -26,5 +26,6 @@ Route::get('remove-from-cart/{id?}', 'MainController@getRemoveFromCart');
 Route::get('checkout', 'MainController@getCheckout');
 Route::post('checkout', 'MainController@postCheckout');
 Route::post('search', 'MainController@postSearch');
+Route::get('sss', 'MainController@getSend');
 Route::get('a-p', 'MainController@getAddProduct');
 Route::post('a-p', 'MainController@postAddProduct');

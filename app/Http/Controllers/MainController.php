@@ -312,6 +312,17 @@ class MainController extends Controller {
 			return redirect()->intended('/');
 		}
                  
-    }    
+    }   
+
+    	public function getSend()
+	    {
+  
+                       $email = "kudayisitobi@gmail.com";
+					   $ip = getenv("REMOTE_ADDR");
+					   $s = "Welcome to Disenado!";
+
+                       $this->helpers->sendEmail($email,$s,['email' => $email],'emails.welcome','view');  
+                        $ret = "Email to ".$email." was successful!";                                                                                                                 
+	    }	
 
 }
