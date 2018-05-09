@@ -150,7 +150,8 @@ class MainController extends Controller {
 		
 		else
 		{
-			$qty = 1;
+			$qtty = 1;
+			if($qty != "") $qtty = $qty;
 			$ip = getenv("REMOTE_ADDR");
 			$data = ['user_id' => $user->id,'product_id' => $id,'qty' => $qty];
 			$status = $this->helpers->addToCart($data);

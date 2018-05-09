@@ -389,7 +389,7 @@
 	$('#atc').submit(function(e){
 		e.preventDefault();
 		var qty = $('#qty').val();
-		window.location = $(this).attr("href") + "/qty/" + qty;
+		window.location = $(this).attr("data-lef") + "/qty/" + qty;
 	});
 	
 	

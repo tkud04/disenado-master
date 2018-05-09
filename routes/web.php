@@ -21,7 +21,7 @@ Route::get('contact', 'MainController@getContact');
 Route::get('shop', 'MainController@getShop');
 Route::get('products/{id?}', 'MainController@getProducts');
 Route::get('cart', 'MainController@getCart');
-Route::get('bag/{id?}', 'MainController@getAddToCart');
+Route::get('bag/{id?}/qty/{qty?}', 'MainController@getAddToCart');
 Route::get('remove-from-cart/{id?}', 'MainController@getRemoveFromCart');
 Route::get('checkout', 'MainController@getCheckout');
 Route::post('checkout', 'MainController@postCheckout');

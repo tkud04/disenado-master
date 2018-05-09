@@ -63,7 +63,7 @@
 											<button type="button" id="add" class="add">+</button>
 										</div>
 										<div class="product-action">
-											<a class="add-tocart" id="atc" href="{{$cart_url}}" data-toggle="tooltip" data-placement="top" title="Add To Cart" >Add To Cart</a>
+											<a class="add-tocart" id="atc" href="#" data-lef="{{$cart_url}}" data-toggle="tooltip" data-placement="top" title="Add To Cart" >Add To Cart</a>
 										</div>	
 									</div>
 								</div>
