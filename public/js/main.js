@@ -183,7 +183,7 @@
         }
     }
     });
-    // featuredcorosel   
+    /** featuredcorosel   
     $('.tst-crosol').owlCarousel({
     loop:true,
     responsiveClass:true,
@@ -204,7 +204,7 @@
             loop:false
         }
     }
-    });
+    });**/
     // catagory 
     $('.cat-crosol').owlCarousel({
     loop:true,
