@@ -1558,7 +1558,12 @@ feature area
     background-size: cover  !important;
     transition: 0.3s;
 }
-
+.tst-crosol .owl-controls .owl-dot{
+    background: #decdef;
+}
+.tst-crosol .owl-controls .owl-dot.active{
+    transform: scale(1.5)
+}
 .tst-crosol .owl-controls{
     position: absolute;
     left: 0;
