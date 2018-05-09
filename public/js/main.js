@@ -386,7 +386,7 @@
 		
 	});
 	
-	$('#atc').submit(function(e){
+	$('#atc').click(function(e){
 		e.preventDefault();
 		var qty = $('#qty').val();
 		window.location = $(this).attr("data-lef") + "/qty/" + qty;
