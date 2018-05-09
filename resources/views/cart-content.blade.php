@@ -24,7 +24,7 @@
 									   $p = $c['product'];
 								        $images = $p['images'];
 										$rm_url = url('remove-from-cart')."/".$c['id'];
-										$ct += $p['price'];
+										$ct += ($c['qty'] * $p['price']);
 							           ?>
 										<tr>
 											<td class="product-thumbnail"><a href="#"><img src="{{$images[0]}}" alt="" /></a></td>

@@ -635,7 +635,7 @@
 											</tr>
 											<tr class="order-total">
 												<th>Order Total</th>
-												<td><strong><span class="amount" id="yuu">{{$ct}}</span></strong></strong>
+												<td><strong><span class="amount" id="yuu">{{$ct + 2500}}</span></strong></strong>
 												</td>
 											</tr>								
 										</tfoot>

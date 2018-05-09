@@ -38,7 +38,7 @@ img.logog{
 									   $p = $c['product'];
 								        $images = $p['images'];
 										$rm_url = url('remove-from-cart')."/".$c['id'];
-										$ct += $p['price'];
+										$ct += ($c['qty'] * $p['price']);
 							           ?>
                                         <li>
                                             <div class="sop-pro">
