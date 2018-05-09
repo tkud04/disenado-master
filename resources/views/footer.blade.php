@@ -26,7 +26,7 @@
 									<h4 class="title-footer">Contact Us</h4>
 									<ul class="Column-one first-col">
 										<li><i class="fa fa-map-marker"></i>
-											<a href="#">DISENADO </a> 21 Ayoola Street, Oworonshoki, Lagos
+											<a href="#">DISENADO </a>  Lagos, Nigeria
 										</li>
 										<li><i class="fa fa-envelope"></i>
 											<a href="#">info@disenado.com.ng </a><br>  
@@ -128,12 +128,12 @@
 										</div>
 										<div class="tagged-as">
 											Tags: 
-											<a href="#">Collection Women</a>,
-											<a href="#"> Fashion</a>,
-											<a href="#"> New</a>,
-											<a href="#"> Theme</a>,
-											<a href="#"> Top</a>.
-											<a href="#"> Wordpress</a>
+											<li><a href="#">Fashion</a></li>
+										<li><a href="#">Laptops</a></li>
+										<li><a href="#">Tablets</a></li>
+										<li><a href="#">Electronics</a></li>
+										<li><a href="#">Fragrances</a></li>
+										<li><a href="#">Best deals</a></li>
 										</div>
 									</div>
 								</div>
