@@ -1558,18 +1558,7 @@ feature area
     background-size: cover  !important;
     transition: 0.3s;
 }
-/* .tst-crosol .owl-controls .owl-dot:nth-child(1){
-    background: url(img/owl-control/testimonial-1.jpg);
-}
-.tst-crosol .owl-controls .owl-dot:nth-child(2){
-    background: url(img/owl-control/testimonial-2.jpg);
-}
-.tst-crosol .owl-controls .owl-dot:nth-child(3){
-    background: url(img/owl-control/testimonial-3.jpg);
-}
-.tst-crosol .owl-controls .owl-dot.active{
-    transform: scale(1.5)
-} */
+
 .tst-crosol .owl-controls{
     position: absolute;
     left: 0;
