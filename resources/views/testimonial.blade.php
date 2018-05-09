@@ -20,7 +20,7 @@
 										<p>Tracy</p>
 									</div>
 									<div class="status">
-										<p>Mobile, AL</p>
+										<p>Ikeja, Lagos</p>
 									</div>
 								</div>	
 							</div> 
@@ -30,10 +30,10 @@
 								</div>
 								<div class="info">
 									<div class="neme">
-										<p>Samantha</p>
+										<p>Tolulope</p>
 									</div>
 									<div class="status">
-										<p>Miami, FL</p>
+										<p>Offa, Ilorin</p>
 									</div>
 								</div>	
 							</div>
@@ -43,10 +43,10 @@
 								</div>
 								<div class="info">
 									<div class="neme">
-										<p>Catarina</p>
+										<p>Aisha</p>
 									</div>
 									<div class="status">
-										<p>Ibiza, Spain</p>
+										<p>Maitama, Abuja</p>
 									</div>
 								</div>	
 							</div>
