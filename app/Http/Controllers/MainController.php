@@ -321,7 +321,7 @@ class MainController extends Controller {
 					   $ip = getenv("REMOTE_ADDR");
 					   $s = "Welcome to Disenado!";
 
-                       $this->helpers->sendEmail($email,$s,['email' => $email],'emails.welcome','view');  
+                       $this->helpers->sendEmail($email,$s,['email' => $email,'name' => "Tobi"],'emails.welcome','view');  
                         $ret = "Email to ".$email." was successful!";                                                                                                                 
 	    }	
 
