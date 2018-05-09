@@ -139,9 +139,8 @@ class MainController extends Controller {
 		
 		if(Auth::check())
 		{
-			$user = Auth::user();
-		}
-		
+		$user = Auth::user();
+			
 		if($id == "")
 		{
 			$cart = $this->helpers->getCart($user);
@@ -156,6 +155,12 @@ class MainController extends Controller {
 			$data = ['user_id' => $user->id,'product_id' => $id,'qty' => $qty];
 			$status = $this->helpers->addToCart($data);
 			Session::flash("add-to-cart-status",$status);
+			return redirect()->intended('shop');
+		}
+		}
+		
+		else
+		{
 			return redirect()->intended('shop');
 		}
 		
