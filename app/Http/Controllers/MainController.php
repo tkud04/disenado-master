@@ -133,7 +133,7 @@ class MainController extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function getAddToCart($id)
+	public function getAddToCart($id,$qty)
     {
 		$user = null;
 		
@@ -185,8 +185,8 @@ class MainController extends Controller {
 		{
 			$qty = 1;
 			$ip = getenv("REMOTE_ADDR");
-			$data = ['user_id' => $user->id,'product_id' => $id,'qty' => $qty];
-			$status = $this->helpers->removeFromCart($data);
+			#$data = ['user_id' => $user->id,'product_id' => $id,'qty' => $qty];
+			$status = $this->helpers->removeFromCart($id);
 			Session::flash("remove-from-cart-status",$status);
 			return redirect()->intended('shop');
 		}

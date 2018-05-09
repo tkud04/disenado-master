@@ -59,11 +59,11 @@
 										<div id=field1>
 											<span>Qty</span>
 											<button type="button" id="sub" class="sub">-</button>
-											<input type="text" id="1" value="1" class="field">
+											<input type="text" id="qty" value="1" class="field">
 											<button type="button" id="add" class="add">+</button>
 										</div>
 										<div class="product-action">
-											<a class="add-tocart" href="{{$cart_url}}" data-toggle="tooltip" data-placement="top" title="Add To Cart" >Add To Cart</a>
+											<a class="add-tocart" id="atc" href="{{$cart_url}}" data-toggle="tooltip" data-placement="top" title="Add To Cart" >Add To Cart</a>
 										</div>	
 									</div>
 								</div>
