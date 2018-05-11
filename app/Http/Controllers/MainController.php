@@ -349,7 +349,8 @@ class MainController extends Controller {
 			 $term = $req['term'];
 			 $searchResults = $this->helpers->search($term);
 			 $bs = $this->helpers->getProducts(); shuffle($bs);
-			 return view('results',compact(['searchResults','bs']));
+			 $cart = $this->helpers->getCart($user);
+			 return view('results',compact(['searchResults','bs','cart']));
 		 }                
     }   
 
