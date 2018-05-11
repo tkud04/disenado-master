@@ -116,7 +116,7 @@
 										  $tr_img = asset($topRight['img']);
 										  $tr_url = url($topRight['url']);
 										?>										
-										<a href="{{$tr_img}}"><img src="{{$tr_url}}" alt=""/></a>
+										<a href="{{$tr_url}}"><img src="{{$tr_img}}" alt=""/></a>
 									</div>
 									<div class="lane-banner">
 									    <?php 
@@ -124,7 +124,7 @@
 										  $mr_img = asset($middleRight['img']);
 										  $mr_url = url($middleRight['url']);
 										?>										
-										<a href="{{$mr_img}}"><img src="{{$mr_url}}" alt=""/></a>
+										<a href="{{$mr_url}}"><img src="{{$mr_img}}" alt=""/></a>
 									</div>
 								</div>
 							</div>
@@ -137,7 +137,7 @@
 									 $bl_img = asset($bottomLeft['img']);
 									 $bl_url = url($bottomLeft['url']);
 									?>										
-									<a href="{{$bl_img}}"><img src="{{$bl_url}}" alt=""/></a>
+									<a href="{{$bl_url}}"><img src="{{$bl_img}}" alt=""/></a>
 								</div>
 							</div>
 							<div class="col-md-6 col-sm-6 col-xs-12">
@@ -147,7 +147,7 @@
 									 $br_img = asset($bottomRight['img']);
 									 $br_url = url($bottomRight['url']);
 									?>										
-									<a href="{{$br_img}}"><img src="{{$br_url}}" alt=""/></a>
+									<a href="{{$br_url}}"><img src="{{$br_img}}" alt=""/></a>
 								</div>
 							</div>
 						</div>
