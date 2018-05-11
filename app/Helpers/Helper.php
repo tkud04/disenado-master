@@ -231,13 +231,7 @@ class Helper implements HelperContract
                } 
                                                       
            } 
-		   
-		   function searchProducts($term)
-		   {
-			   $ret = [];
-			   
-			   return $ret;
-		   }		   
+		   		   
 		   
 		   function searchUsers($term)
 		   {
