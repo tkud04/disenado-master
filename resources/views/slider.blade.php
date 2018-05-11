@@ -113,8 +113,8 @@
 									<div class="lane-banner">
 									    <?php 
 										  $topRight = $laneBanner["topRight"];
-										  $mr_img = asset($topRight['img']);
-										  $mr_url = url($topRight['url']);
+										  $tr_img = asset($topRight['img']);
+										  $tr_url = url($topRight['url']);
 										?>										
 										<a href="{{$tr_img}}"><img src="{{$tr_url}}" alt=""/></a>
 									</div>
