@@ -232,17 +232,110 @@ class Helper implements HelperContract
                                                       
            } 
 		   
+		   function searchProducts($term)
+		   {
+			   $ret = [];
+			   
+			   return $ret;
+		   }		   
+		   
+		   function searchUsers($term)
+		   {
+			   $ret = [];
+			   $rr = User::SearchByKeyword($term)->get();
+			   if($rr != null)
+			   {
+				   foreach($rr as $r)
+				   {
+					   array_push($ret,$r->id);
+				   }
+			   }
+			   return $ret;
+		   }		   
+		   
+		   function searchProductData($term)
+		   {
+		       $ret = [];
+			   $rr = ProductData::SearchByKeyword($term)->get();
+			   if($rr != null)
+			   {
+				   foreach($rr as $r)
+				   {
+					   array_push($ret,$r->product_id);
+				   }
+			   }		
+			   return $ret;
+		   }		   
+		   
+		   function searchProducts($term)
+		   {
+			   $ret = [];
+			   $rr = Products::SearchByKeyword($term)->get();
+			   {
+				   foreach($rr as $r)
+				   {
+					   array_push($ret,$r->id);
+				   }
+			   }			   
+			   return $ret;
+		   }		   
+		   
+		   function searchUserData($term)
+		   {
+			   $ret = [];
+			   $rr = UserData::SearchByKeyword($term)->get();
+			   {
+				   foreach($rr as $r)
+				   {
+					   array_push($ret,$r->user_id);
+				   }
+			   }			   
+			   return $ret;
+		   }
+		   
 		   function search($term)
            {
-           	$client = Clients::where("id", $id)->first();
-           
-               if($client != null)
-               {
-               	$client->delete();
-                   $cd = ClientData::where("client_id", $id)->first();
-                   if($cd != null) $cd->delete();
-               } 
-                                                      
+			 $ret = [];
+			 $ret[0] = [];
+			 $ret[1] = [];
+			 $ret[2] = [];
+			 $switch = 0;
+			 
+           	 #$u = $this->searchUsers($term);
+           	 #$ud = $this->searchUserData($term);
+			 $pd = $this->searchProductData($term);
+			 $p = $this->searchProducts($term);
+			 
+			 $productResults = $pd + $p;
+			 $productResults = array_unique($productResults);
+			 
+			 
+			 foreach($productResults as $pr)
+			 {
+				 $temp = [];
+				 $temp = $this->getProduct($pr);
+				 array_push($ret[$switch],$temp);
+				 if($switch >= 2) $switch = 0;
+				 else ++$switch;
+			 }
+			 
+			 return $ret;
+           } 		   
+		   
+		   function getSlideBanner()
+           {
+			 $ret = [];
+			 shuffle($ret);
+			 
+			 return $ret;
+           } 		   
+		   
+		   function getLaneBanner()
+           {
+			 $ret = [];
+			 shuffle($ret);
+			 
+			 return $ret;
            } 
            
            

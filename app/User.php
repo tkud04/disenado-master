@@ -26,4 +26,24 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+	
+	 /**
+     * The attributes that should be hidden for arrays.
+     *
+     * @return query
+     */
+	 public function scopeSearchByKeyword($query, $keyword)
+	 {
+		 if($keyword != "")
+		 {
+			 $query->where(function($query) use($keyword){
+				 $query->where("fname","LIKE","%keyword%")
+				       ->orWhere("lname","LIKE","%keyword%")
+				       ->orWhere("email","LIKE","%keyword%")
+				       ->orWhere("phone","LIKE","%keyword%");
+			 });
+		 }
+		 return $query;
+	 }
+	
 }

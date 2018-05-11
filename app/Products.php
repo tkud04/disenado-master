@@ -10,5 +10,22 @@ class Products extends Model {
 	 * @var array
 	 */
 	protected $fillable = ['name', 'price', 'in_stock'];
+	
+	/**
+     * The attributes that should be hidden for arrays.
+     *
+     * @return query
+     */
+	 public function scopeSearchByKeyword($query, $keyword)
+	 {
+		 if($keyword != "")
+		 {
+			 $query->where(function($query) use($keyword){
+				 $query->where("name","LIKE","%keyword%")
+				       ->orWhere("price","<=","%keyword%");
+			 });
+		 }
+		 return $query;
+	 }
 
 }

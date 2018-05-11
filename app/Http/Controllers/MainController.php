@@ -38,8 +38,11 @@ class MainController extends Controller {
 		$bs = $this->helpers->getProducts(); shuffle($bs);
 		$os = $this->helpers->getProducts(); shuffle($os);
 		$ss = $this->helpers->getProducts(); shuffle($ss);
+		
+		$slideBanner = $this->helpers->getSlideBanner();
+		$laneBanner = $this->helpers->getLaneBanner();
 
-    	return view('index',compact(['cart','user','bs','os','ss','trending']));
+    	return view('index',compact(['cart','user','bs','os','ss','trending','slideBanner','laneBanner']));
     }
 	
 	
@@ -312,6 +315,40 @@ class MainController extends Controller {
 			return redirect()->intended('/');
 		}
                  
+    }   
+
+	/**
+	 * Show the application Checkout screen to the user.
+	 *
+	 * @return Response
+	 */
+    public function postSearch(Request $request)
+    {
+		$user = null;
+		
+		if(Auth::check())
+		{
+			$user = Auth::user();
+		}
+			
+		$req = $request->all();
+        
+        $validator = Validator::make($req, [
+                             'term' => 'required',
+         ]);
+         
+         if($validator->fails())
+         {
+             $messages = $validator->messages();
+             return redirect()->back()->withInput()->with('errors',$messages);
+         }
+		 else
+		 {
+			 $term = $req['term'];
+			 $searchResults = $this->helpers->search($term);
+			 $bs = $this->helpers->getProducts(); shuffle($bs);
+			 return view('results',compact(['searchResults','bs']));
+		 }                
     }   
 
     	public function getSend()

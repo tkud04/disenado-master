@@ -111,10 +111,20 @@
 								</div>
 								<div class="col-md-4 col-sm-4 col-xs-12">
 									<div class="lane-banner">
-										<a href="#"><img src="{{asset('img/downloads/phone1_1.jpg')}}" alt=""/></a>
+									    <?php 
+										  $topRight = $laneBanner["topRight"];
+										  $mr_img = asset($topRight['img']);
+										  $mr_url = url($topRight['url']);
+										?>										
+										<a href="{{$tr_img}}"><img src="{{$tr_url}}" alt=""/></a>
 									</div>
 									<div class="lane-banner">
-										<a href="#"><img src="{{asset('img/downloads/watch1_1.jpg')}}" alt=""/></a>
+									    <?php 
+										  $middleRight = $laneBanner["middleRight"];
+										  $mr_img = asset($middleRight['img']);
+										  $mr_url = url($middleRight['url']);
+										?>										
+										<a href="{{$mr_img}}"><img src="{{$mr_url}}" alt=""/></a>
 									</div>
 								</div>
 							</div>
@@ -122,16 +132,22 @@
 						<div class="row">
 							<div class="col-md-6 col-sm-6 col-xs-12">
 								<div class="slide-banar-5 line-fasion">
-									<a href="#">
-										<img src="{{asset('img/downloads/laptop1_1.jpg')}}" alt="">
-									</a>
+									<?php 
+								     $bottomLeft = $slideBanner["bottomLeft"];
+									 $bl_img = asset($bottomLeft['img']);
+									 $bl_url = url($bottomLeft['url']);
+									?>										
+									<a href="{{$bl_img}}"><img src="{{$bl_url}}" alt=""/></a>
 								</div>
 							</div>
 							<div class="col-md-6 col-sm-6 col-xs-12">
 								<div class="slide-banar-5 line-fasion">
-									<a href="#">
-										<img src="{{asset('img/downloads/tab1_1.jpg')}}" alt="">
-									</a>
+									<?php 
+								     $bottomRight = $slideBanner["bottomRight"];
+									 $br_img = asset($bottomRight['img']);
+									 $br_url = url($bottomRight['url']);
+									?>										
+									<a href="{{$br_img}}"><img src="{{$br_url}}" alt=""/></a>
 								</div>
 							</div>
 						</div>
