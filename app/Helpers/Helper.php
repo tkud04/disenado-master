@@ -336,8 +336,8 @@ class Helper implements HelperContract
            {
 			 $ret = [];
 			 shuffle($this->laneBanner);
-			 $ret["topRight"] = $this->slideBanner[0];
-			 $ret["middleRight"] = $this->slideBanner[1];
+			 $ret["topRight"] = $this->laneBanner[0];
+			 $ret["middleRight"] = $this->laneBanner[1];
 			 return $ret;
            } 
            
