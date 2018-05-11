@@ -19,6 +19,13 @@ use Illuminate\Pagination\LengthAwarePaginator;
 class Helper implements HelperContract
 {
 
+         protected $laneBanner = [["img"=>"img/downloads/phone1_1.jpg"],["url"=>"shop"],
+								   "img"=>"img/downloads/watch1_1.jpg"],["url"=>"shop"],
+		                         ];
+								 
+         protected $sliderBanner = [["img"=>"img/downloads/laptop1_1.jpg"],["url"=>"shop"],
+								   "img"=>"img/downloads/tab1_1.jpg"],["url"=>"shop"],
+		                         ];
           /**
            * Sends an email(blade view or text) to the recipient
            * @param String $to
@@ -319,16 +326,18 @@ class Helper implements HelperContract
 		   function getSlideBanner()
            {
 			 $ret = [];
-			 shuffle($ret);
-			 
+			 shuffle($this->slideBanner);
+			 $ret["bottomLeft"] = $this->slideBanner[0];
+			 $ret["bottomRight"] = $this->slideBanner[1];
 			 return $ret;
            } 		   
 		   
 		   function getLaneBanner()
            {
 			 $ret = [];
-			 shuffle($ret);
-			 
+			 shuffle($this->laneBanner);
+			 $ret["topRight"] = $this->slideBanner[0];
+			 $ret["middleRight"] = $this->slideBanner[1];
 			 return $ret;
            } 
            

@@ -20,7 +20,7 @@
 									</a>
 								</div>
 								<div class="product-desc">
-									<h4 class="name"><a href="#">{{$b['name']}}</a></h4>
+									<h4 class="name"><a href="{{$url}}">{{$b['name']}}</a></h4>
 									<span class="amount">
 										<del><span class="amount-del">&#8358;{{$b['price'] + 200}}</span></del>
 										&#8358;{{$b['price']}}
@@ -55,7 +55,7 @@
 									</a>
 								</div>
 								<div class="product-desc">
-									<h4 class="name"><a href="#">{{$o['name']}}</a></h4>
+									<h4 class="name"><a href="{{$url}}">{{$o['name']}}</a></h4>
 									<span class="amount">
 										<del><span class="amount-del">&#8358;{{$o['price'] + 200}}</span></del>
 										&#8358;{{$o['price']}}
@@ -90,7 +90,7 @@
 									</a>
 								</div>
 								<div class="product-desc">
-									<h4 class="name"><a href="#">{{$s['name']}}</a></h4>
+									<h4 class="name"><a href="{{$url}}">{{$s['name']}}</a></h4>
 									<span class="amount">
 										<del><span class="amount-del">&#8358;{{$s['price'] + 200}}</span></del>
 										&#8358;{{$s['price']}}
