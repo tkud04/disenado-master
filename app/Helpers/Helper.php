@@ -23,7 +23,7 @@ class Helper implements HelperContract
 								   ["img"=>"img/downloads/watch1_1.jpg","url"=>"shop"],
 		                         ];
 								 
-         protected $sliderBanner = [["img"=>"img/downloads/laptop1_1.jpg","url"=>"shop"],
+         protected $slideBanner = [["img"=>"img/downloads/laptop1_1.jpg","url"=>"shop"],
 								   ["img"=>"img/downloads/tab1_1.jpg","url"=>"shop"],
 		                         ];
           /**
