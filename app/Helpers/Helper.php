@@ -172,7 +172,8 @@ class Helper implements HelperContract
                   
                   foreach($pi as $img)
                  {
-                 	array_push($images, $img->url);
+					 $ii = str_replace("t-shirt","tshirt",$img->url);
+                 	array_push($images, $ii);
                  }               
                   $temp['images'] = $images;
                   $temp['name'] = $p->name;
