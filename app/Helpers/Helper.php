@@ -19,12 +19,12 @@ use Illuminate\Pagination\LengthAwarePaginator;
 class Helper implements HelperContract
 {
 
-         protected $laneBanner = [["img"=>"img/downloads/phone1_1.jpg"],["url"=>"shop"],
-								   "img"=>"img/downloads/watch1_1.jpg"],["url"=>"shop"],
+         protected $laneBanner = [["img"=>"img/downloads/phone1_1.jpg","url"=>"shop"],
+								   ["img"=>"img/downloads/watch1_1.jpg","url"=>"shop"],
 		                         ];
 								 
-         protected $sliderBanner = [["img"=>"img/downloads/laptop1_1.jpg"],["url"=>"shop"],
-								   "img"=>"img/downloads/tab1_1.jpg"],["url"=>"shop"],
+         protected $sliderBanner = [["img"=>"img/downloads/laptop1_1.jpg","url"=>"shop"],
+								   ["img"=>"img/downloads/tab1_1.jpg","url"=>"shop"],
 		                         ];
           /**
            * Sends an email(blade view or text) to the recipient
