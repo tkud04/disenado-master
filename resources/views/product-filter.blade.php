@@ -30,7 +30,7 @@
 					    <?php
 						  $url = url("products/".$t['id']);
 						  $images = $t['images'];
-						  $category = ".".$t['category'];
+						  $category = $t['category'];
 						  $categoryClass = "";
 						  $cart_url = "bag/".$t['id'];						  
 						 ?>
