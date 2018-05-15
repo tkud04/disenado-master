@@ -69,7 +69,7 @@
 								</div>
 							</div>
 						</div>
-						@if($count == 0 || $count % 3 == 0)
+						@if($count % 3 == 0)
 						 </div>
 						@endif
 						<?php ++$count; ?>
