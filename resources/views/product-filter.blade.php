@@ -19,7 +19,11 @@
 					</div>
 					<div id="Container">
 					    @if(isset($trending) && count($trending) > 0)
+						 <?php $count = 0; ?>
 						@foreach($trending as $t)
+						@if($count % 3 == 0)
+						 <div class="row">
+						@endif
 					    <?php
 						  $url = url("products/".$t['id']);
 						  $images = $t['images'];
@@ -60,6 +64,10 @@
 								</div>
 							</div>
 						</div>
+						@if($count % 3 == 0)
+						 </div>
+						@endif
+						<?php ++$count; ?>
 						@endforeach
 						@endif
 					</div>
