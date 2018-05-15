@@ -12,14 +12,15 @@
 					<div class="col-md-12">
 						<div class="filter-mnu">
 							<div class="filter" data-filter="all">all</div>
-							<div class="filter" data-filter=".Laptops">Laptops</div>
-							<div class="filter" data-filter=".Fashion">Fashion</div>
-							<div class="filter" data-filter=".Tablets">Tablets</div>
-							<div class="filter" data-filter=".Electronics">Electronics</div>
-							<div class="filter" data-filter=".Fragrances">Perfumes</div>
+							<div class="filter" data-filter=".laptops">Laptops</div>
+							<div class="filter" data-filter=".fashion">Fashion</div>
+							<div class="filter" data-filter=".tablets">Tablets</div>
+							<div class="filter" data-filter=".flectronics">Electronics</div>
+							<div class="filter" data-filter=".fragrances">Perfumes</div>
 						</div>
 					</div>
 					<div id="Container">
+					  <center>
 					    @if(isset($trending) && count($trending) > 0)
 						 <?php $count = 0; ?>
 						@foreach($trending as $t)
@@ -74,6 +75,7 @@
 						<?php ++$count; ?>
 						@endforeach
 						@endif
+					  </center>
 					</div>
 				</div>
 				<div class="row">
