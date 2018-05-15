@@ -15,7 +15,7 @@
 							<div class="filter" data-filter=".laptops">Laptops</div>
 							<div class="filter" data-filter=".fashion">Fashion</div>
 							<div class="filter" data-filter=".tablets">Tablets</div>
-							<div class="filter" data-filter=".flectronics">Electronics</div>
+							<div class="filter" data-filter=".electronics">Electronics</div>
 							<div class="filter" data-filter=".fragrances">Perfumes</div>
 						</div>
 					</div>
@@ -34,7 +34,7 @@
 						  $categoryClass = "";
 						  $cart_url = "bag/".$t['id'];						  
 						 ?>
-						<div class="mix  {{$category}}">
+						<div class="mix {{$category}}">
 							<div class="col-md-3 col-sm-4">
 								<div class="single-product">
 									<div class="product-image fix">
