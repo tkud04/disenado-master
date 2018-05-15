@@ -185,6 +185,7 @@ class Helper implements HelperContract
                   $temp['images'] = $images;
                   $temp['name'] = $p->name;
                   $temp['price'] = $p->price;
+                  $temp['category'] = $pd->category;
                   $temp['colors'] = $pd->colors;
                   $temp['description'] = $pd->description;
                   $temp["date"] = $p->created_at->format("D, jS F Y h:i A");
@@ -215,6 +216,7 @@ class Helper implements HelperContract
                   $temp['images'] = $images;
                   $temp['name'] = $p->name;
                   $temp['price'] = $p->price;
+				  $temp['category'] = $pd->category;
                   $temp['colors'] = $pd->colors;
                   $temp['description'] = $pd->description;
                   $temp['brand'] = $pd->brand;

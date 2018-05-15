@@ -12,24 +12,28 @@
 					<div class="col-md-12">
 						<div class="filter-mnu">
 							<div class="filter" data-filter="all">all</div>
-							<div class="filter" data-filter=".Nightwear">Accessories</div>
-							<div class="filter" data-filter=".Dress">Clothes</div>
-							<div class="filter" data-filter=".Jewellery">Jewellery</div>
+							<div class="filter" data-filter=".Laptops">Laptops</div>
+							<div class="filter" data-filter=".Fashion">Fashion</div>
+							<div class="filter" data-filter=".Tablets">Tablets</div>
+							<div class="filter" data-filter=".Electronics">Electronics</div>
+							<div class="filter" data-filter=".Fragrances">Perfumes</div>
 						</div>
 					</div>
 					<div id="Container">
 					    @if(isset($trending) && count($trending) > 0)
 						 <?php $count = 0; ?>
 						@foreach($trending as $t)
-						@if($count % 3 == 0)
+						@if($count == 0 || $count % 3 == 0)
 						 <div class="row">
 						@endif
 					    <?php
 						  $url = url("products/".$t['id']);
 						  $images = $t['images'];
-						  $cart_url = "bag/".$t['id'];
+						  $category = ".".$t['category'];
+						  $categoryClass = "";
+						  $cart_url = "bag/".$t['id'];						  
 						 ?>
-						<div class="mix  Nightwear">
+						<div class="mix  {{$category}}">
 							<div class="col-md-3 col-sm-4">
 								<div class="single-product">
 									<div class="product-image fix">
@@ -64,7 +68,7 @@
 								</div>
 							</div>
 						</div>
-						@if($count % 3 == 0)
+						@if($count == 0 || $count % 3 == 0)
 						 </div>
 						@endif
 						<?php ++$count; ?>
