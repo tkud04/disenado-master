@@ -19,6 +19,7 @@ Interface HelperContract
 		public function search($term);
 		public function getSlideBanner();
 		public function getLaneBanner();
+		public function getBrands();
 		public function paginate($items, $perPage);
         /*public function checkout();*/
 }
