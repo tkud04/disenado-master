@@ -42,9 +42,11 @@ class MainController extends Controller {
 		$slideBanner = $this->helpers->getSlideBanner();
 		$laneBanner = $this->helpers->getLaneBanner();
 		
+		$brands = $this->helpers->getBrands();
+		
 		#dd($slideBanner);
 
-    	return view('index',compact(['cart','user','bs','os','ss','trending','slideBanner','laneBanner']));
+    	return view('index',compact(['cart','user','bs','os','ss','trending','slideBanner','laneBanner','brands']));
     }
 	
 	

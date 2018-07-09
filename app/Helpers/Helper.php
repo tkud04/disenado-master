@@ -26,6 +26,19 @@ class Helper implements HelperContract
          protected $slideBanner = [["img"=>"img/downloads/laptop1_1.jpg","url"=>"shop"],
 								   ["img"=>"img/downloads/tab1_1.jpg","url"=>"shop"],
 		                         ];
+         
+		 protected $brands = ["img/brand/brand2.png",
+		                      "img/brand/brand3.png",
+		                      "img/brand/brand4.png",
+		                      "img/brand/brand5.png",
+		                      "img/brand/brand6.png",
+		                      "img/brand/brand7.png",
+		                      "img/brand/brand8.png",
+		                      "img/brand/brand9.png",
+		                      "img/brand/brand10.png",
+		                      "img/brand/brand11.gif",
+		                      "img/brand/brand12.gif",
+		                      ];
           /**
            * Sends an email(blade view or text) to the recipient
            * @param String $to
@@ -340,6 +353,14 @@ class Helper implements HelperContract
 			 shuffle($this->laneBanner);
 			 $ret["topRight"] = $this->laneBanner[0];
 			 $ret["middleRight"] = $this->laneBanner[1];
+			 return $ret;
+           }
+
+		   function getBrands()
+           {
+			 shuffle($this->brands);
+			 $ret = [];
+			 for($i=0; $i < 4; $i++) array_push($ret,$this->brands[$i]);
 			 return $ret;
            } 
            
