@@ -99,6 +99,49 @@ class LoginController extends Controller {
              return redirect()->intended('/');
           }
     }
+	
+	
+	public function getForgotUsername()
+    {
+         return view('forgot_username');
+    }
+    
+    /**
+     * Send username to the given user.
+     * @param  \Illuminate\Http\Request  $request
+     */
+    public function postForgotUsername(Request $request)
+    {
+    	$req = $request->all(); 
+        $validator = Validator::make($req, [
+                             'email' => 'required|email'
+                  ]);
+                  
+        if($validator->fails())
+         {
+             $messages = $validator->messages();
+             //dd($messages);
+             
+             return redirect()->back()->withInput()->with('errors',$messages);
+         }
+         
+         else{
+         	$ret = $req['email'];
+
+                $user = User::where('email',$ret)->first();
+
+                if(is_null($user))
+                {
+                        return redirect()->back()->withErrors("This user doesn't exist!","errors"); 
+                }
+                
+                $this->helpers->sendEmail($user->email,'Your Username',['username' => $user->username],'emails.username','view');                                                         
+            Session::flash("reset-status","success");           
+            return redirect()->intended('forgot-username');
+
+      }
+                  
+    }    
     
     
     public function getLogout()

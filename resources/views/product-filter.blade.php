@@ -22,8 +22,12 @@
 					<div id="Container">
 					  <div class="row">
 					    @if(isset($trending) && count($trending) > 0)
-						 <?php $count = 0; ?>
-						@foreach($trending as $t)
+						 <?php $itemCount = 0; $total = count($todayGames); $counter = 0;?>
+				    	@foreach($trending as $t)
+				 		<?php ++$itemCount; ++$counter; if($itemCount >= 5) $itemCount = 1;?>
+		                @if($itemCount == 1)
+                         <div class="row">
+	                    @endif
 					    <?php
 						  $url = url("products/".$t['id']);
 						  $images = $t['images'];
@@ -66,7 +70,9 @@
 								</div>
 							</div>
 						</div>
-						<?php ++$count; ?>
+						@if($itemCount == 4 || $counter == $total)
+                         </div> 
+	                    @endif
 						@endforeach
 						@endif
 					  </div>
