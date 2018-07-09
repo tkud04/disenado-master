@@ -22,7 +22,7 @@
 					<div id="Container">
 					  <div class="row">
 					    @if(isset($trending) && count($trending) > 0)
-						 <?php $itemCount = 0; $total = count($todayGames); $counter = 0;?>
+						 <?php $itemCount = 0; $total = count($trending); $counter = 0;?>
 				    	@foreach($trending as $t)
 				 		<?php ++$itemCount; ++$counter; if($itemCount >= 5) $itemCount = 1;?>
 		                @if($itemCount == 1)
