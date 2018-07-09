@@ -5,7 +5,7 @@
 					<div class="col-md-12">
 						<div class="br-corosel ptb-70 ind-style">
 						    @foreach($brands as $b)
-							 <?php $ass = asset("img/brand/".$b); ?>
+							 <?php $ass = asset($b); ?>
 							<div class="brnd-logo">
 								<img src="{{$ass}}" alt="">
 							</div>
