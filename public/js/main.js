@@ -304,11 +304,11 @@
         max: 600,
         values: [ 2000, 100000 ],
         slide: function( event, ui ) {
-        amount.val( "&#8358;" + ui.values[ 0 ] + " - &#8358;" + ui.values[ 1 ] );
+        amount.val( "N" + ui.values[ 0 ] + " - N" + ui.values[ 1 ] );
         }
         });
-        amount.val( "&#8358;" + slideRange.slider( "values", 0 ) +
-        " - &#8358;" + slideRange.slider( "values", 1 ) );  
+        amount.val( "N" + slideRange.slider( "values", 0 ) +
+        " - N" + slideRange.slider( "values", 1 ) );  
         var unit = 1;
         var total;
         // if user changes value in field
