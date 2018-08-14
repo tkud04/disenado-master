@@ -13,11 +13,11 @@
 						<div class="widget">
 							<h3>Categories</h3>
 							<ul>
-								<li><a href="#">Bags</a></li>
-								<li><a href="#">Beauty</a></li>
-								<li><a href="#">Cost & Jackets</a></li>
-								<li><a href="#">Dress</a></li>
-								<li><a href="#">Jewellery</a></li>
+								<li><a href="#">Laptops</a></li>
+								<li><a href="#">Fashion</a></li>
+								<li><a href="#">Tablets</a></li>
+								<li><a href="#">Electronics</a></li>
+								<li><a href="#">Perfumes</a></li>
 							</ul>    
 						</div>
 						<div class="widget">
@@ -51,7 +51,6 @@
 										<form>
 											<select name="orderby" class="orderby ">
                                                 <option value="menu_order" selected="selected">Default</option>
-                                                <option value="popularity">Popularity</option>
                                                 <option value="rating">Rating</option>
                                                 <option value="date">Newness</option>
                                                 <option value="price">Price</option>
