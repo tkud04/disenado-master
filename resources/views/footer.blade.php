@@ -29,12 +29,12 @@
 											<a href="#">DISENADO </a>  Lagos, Nigeria
 										</li>
 										<li><i class="fa fa-envelope"></i>
-											<a href="#">info@disenado.com.ng </a><br>  
-											<a href="#">jide@disenado.com.ng</a><br>
-											<a href="#">tobi@disenado.com.ng</a>
+											<a href="mailto:info@disenado.com.ng">info@disenado.com.ng </a><br>  
+											<a href="mailto:jidedami@disenado.com.ng">jidedami@disenado.com.ng</a><br>
+										
 										</li>  
-										<li><i class="fa fa-phone"></i>(+234) 8024204576
-											<br>(+234) 7054291601
+										<li><i class="fa fa-phone"></i>(+234)802 420 4576
+											<br>(+234)705 429 1601
 										</li>
 									</ul>
 								</div>
@@ -49,7 +49,6 @@
 										<li><a href="#">Tablets</a></li>
 										<li><a href="#">Electronics</a></li>
 										<li><a href="#">Fragrances</a></li>
-										<li><a href="#">Best deals</a></li>
 									</ul>
 								</div>
 							</div>
