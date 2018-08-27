@@ -269,12 +269,12 @@ class Helper implements HelperContract
 			   return $ret;
 		   }		   
 		   
-		   function searchProductData($term)
+		   function searchProductData($term,$opt)
 		   {
 		       $ret = [];
 			   $posh = "%".$term."%";
-			   $rr = ProductData::where("brand","LIKE",$posh)
-				       ->orWhere("category","LIKE",$posh)
+			   $rr = ProductData::where("category",$opt)
+				       ->where("brand","LIKE",$posh)
 				       ->orWhere("description","LIKE",$posh)
 				       ->orWhere("colors","LIKE",$posh)->get();
 
@@ -292,8 +292,7 @@ class Helper implements HelperContract
 		   {
 			   $ret = [];
 			   $posh = "%".$term."%";
-			   $rr = Products::where("name","LIKE",$posh)
-				       ->orWhere("price","<=",$term)->get();
+			   $rr = Products::where("name","LIKE",$posh)->get();
 			   {
 				   foreach($rr as $r)
 				   {

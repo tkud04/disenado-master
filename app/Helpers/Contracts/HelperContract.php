@@ -14,7 +14,7 @@ Interface HelperContract
 		public function removeFromCart($data);
 		public function searchUsers($term);
 		public function searchUserData($term);
-		public function searchProductData($term);
+		public function searchProductData($term,$opt);
 		public function searchProducts($term);
 		public function search($term);
 		public function getSlideBanner();
