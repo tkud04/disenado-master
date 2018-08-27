@@ -315,7 +315,7 @@ class Helper implements HelperContract
 			   return $ret;
 		   }
 		   
-		   function search($term)
+		   function search($term,$opt)
            {
 			 $ret = [];
 			 $ret[0] = [];
@@ -325,7 +325,7 @@ class Helper implements HelperContract
 			 
            	 #$u = $this->searchUsers($term);
            	 #$ud = $this->searchUserData($term);
-			 $pd = $this->searchProductData($term);
+			 $pd = $this->searchProductData($term,$opt);
 			 $p = $this->searchProducts($term);
 			 
 			 $productResults = $pd + $p;

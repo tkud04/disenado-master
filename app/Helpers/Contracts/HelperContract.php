@@ -16,7 +16,7 @@ Interface HelperContract
 		public function searchUserData($term);
 		public function searchProductData($term,$opt);
 		public function searchProducts($term);
-		public function search($term);
+		public function search($term,$opt);
 		public function getSlideBanner();
 		public function getLaneBanner();
 		public function getBrands();
