@@ -272,7 +272,12 @@ class Helper implements HelperContract
 		   function searchProductData($term)
 		   {
 		       $ret = [];
-			   $rr = ProductData::SearchByKeyword($term)->get();
+			   $posh = "%".$term."%";
+			   $rr = ProductData::where("brand","LIKE",$posh)
+				       ->orWhere("category","LIKE",$posh)
+				       ->orWhere("description","LIKE",$posh)
+				       ->orWhere("colors","LIKE",$posh)->get();
+
 			   if($rr != null)
 			   {
 				   foreach($rr as $r)
@@ -286,7 +291,9 @@ class Helper implements HelperContract
 		   function searchProducts($term)
 		   {
 			   $ret = [];
-			   $rr = Products::SearchByKeyword($term)->get();
+			   $posh = "%".$term."%";
+			   $rr = Products::where("name","LIKE",$posh)
+				       ->orWhere("price","<=",$term)->get();
 			   {
 				   foreach($rr as $r)
 				   {

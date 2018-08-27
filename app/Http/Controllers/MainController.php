@@ -339,6 +339,7 @@ class MainController extends Controller {
         
         $validator = Validator::make($req, [
                              'term' => 'required',
+                             'opt' => 'required',
          ]);
          
          if($validator->fails())
