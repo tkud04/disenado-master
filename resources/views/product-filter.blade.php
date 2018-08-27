@@ -16,7 +16,7 @@
 							<div class="filter" data-filter=".fashion">Fashion</div>
 							<div class="filter" data-filter=".tablets">Tablets</div>
 							<div class="filter" data-filter=".electronics">Electronics</div>
-							<div class="filter" data-filter=".fragrances">Perfumes</div>
+							<div class="filter" data-filter=".fragrances">Fragrances</div>
 						</div>
 					</div>
 					<div id="Container">
@@ -61,7 +61,7 @@
 									</div>
 									<h4 class="name"><a href="{{$url}}">{{$t['name']}}</a></h4>
 									<span class="amount">
-										<del><span class="amount-del">&#8358;{{$t['price'] + 200}}</span></del>
+										<del><span class="amount-del">&#8358;{{$t['price'] + rand(2000,5000)}}</span></del>
 										&#8358;{{$t['price']}}
 									</span>
 									<div class="add-to-cart">
