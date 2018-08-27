@@ -17,7 +17,7 @@
 								<li><a href="#">Fashion</a></li>
 								<li><a href="#">Tablets</a></li>
 								<li><a href="#">Electronics</a></li>
-								<li><a href="#">Perfumes</a></li>
+								<li><a href="#">Fragrances</a></li>
 							</ul>    
 						</div>
 						<div class="widget">

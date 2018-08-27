@@ -10,7 +10,7 @@
 							<form action="{{url('search')}}" method="post">
 								{!! csrf_field() !!}
 								<div class="select-style">
-									<select class="select-optn ">
+									<select class="select-optn" name="opt">
 										<option class="first-option">all</option>
 										<option class="">laptops</option>
 										<option class="">fashion</option>
@@ -20,7 +20,7 @@
 									</select>
 								</div>
 								<input class="input-text-box" name="term" spellcheck="false" value="" placeholder="Search product...">
-								<button class="btn search-button"><i class="fa fa-search"></i></button>
+								<button type="submit" class="btn search-button"><i class="fa fa-search"></i></button>
 							</form>
 								</div>
 							</div>
