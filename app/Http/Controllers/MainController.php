@@ -350,7 +350,8 @@ class MainController extends Controller {
 		 else
 		 {
 			 $term = $req['term'];
-			 $searchResults = $this->helpers->search($term);
+			 $opt = $req['opt'];
+			 $searchResults = $this->helpers->search($term,$opt);
 			 $bs = $this->helpers->getProducts(); shuffle($bs);
 			 $cart = $this->helpers->getCart($user);
 			 dd($searchResults);
