@@ -4,7 +4,7 @@
 			<div class="container">
 				<div class="row">
 	    @if(Session::has('cart-status') && Session::get('cart-status') == "new-user")
-			 <center><div class="alert alert-success">You must <a href="{{url('login')}}">login</a> or <a href="{{url('register')}}">signup</a> to continue.</div></center>
+			 <center><div class="alert alert-success">You must <a href="#" class="legbe">login</a> or <a href="#" class="legbe2">signup</a> to continue.</div></center>
 			@endif
 	    @if(Session::has('add-to-cart-status') && Session::get('add-to-cart-status') == "success")
 			 <center><div class="alert alert-success">Added to cart!</div></center>
@@ -95,7 +95,7 @@
 									@foreach($ret as $p)
 									     <?php
 										   $url = "products/".$p['id'];
-										   $cart_url = "bag/".$p['id'];
+										   $cart_url = "bag/".$p['id'].'/qty/1';
 										   $images = $p['images'];
 										 ?>
 										<div class="col-md-4 col-sm-4 col-xs-12">
@@ -133,7 +133,7 @@
 								@foreach($ret as $p)
 									     <?php
 										   $url = "products/".$p['id'];
-										   $cart_url = "bag/".$p['id'];
+										    $cart_url = "bag/".$p['id'].'/qty/1';
 										   $images = $p['images'];
 										 ?>								
 									<div class="single-product">
