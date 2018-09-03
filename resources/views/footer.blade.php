@@ -9,6 +9,19 @@
 								</div>
 								<p>'Disenado' and the 'Disenado' logo are trade marks of Disenado NG Limited and are registered in numerous jurisdictions around the world.
 									<br>&copy; Copyright 2018 Disenado NG Limited. All rights reserved.</p>
+									
+								<p>Disenado Nigeria Store, doing business as Disenado, is a Nigerian e-commerce company based in Lagos that was founded by Tobi Kudayisi and Jide Bewaji on October 20 2016.
+
+Your one stop shop for pretty much everything you need:
+-Customised t-shirts, hoodies, sweatshirts and varsity jackets
+-Phones, tablets, laptops and accessories
+-Consumer electronics
+-Perfumes and Fragrances
+
+Our access to original equipment manufacturers and premium sellers gives us a wide range of products at very low prices. When you shop on our platform you can pay with your debit card on pay on delivery. We currently offer payment on delivery to customers in Lagos NG only.
+
+Disenado is your one-stop shop for everything you need. With a wide range of products and categories, all you need to do is hop on our website, select the items you need, add them to your cart and checkout! Do you want a customised t-shirt or hoodie for a special occasion or just to look good? Shop from our list of quality custom designers. Need a new tablet or phone? Select from our wide range of gadgets in stock. Need new electronics? Disenado is the right place to shop and pay on delivery. 
+</p>
 								<div class="social-icon">
 									<span><a href="#"><i class="fa fa-facebook"></i></a></span>
 									<span><a href="#"><i class="fa fa-twitter"></i></a></span>

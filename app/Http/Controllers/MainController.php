@@ -168,6 +168,7 @@ class MainController extends Controller {
 		
 		else
 		{
+			Session::flash("cart-status","new-user");
 			return redirect()->intended('shop');
 		}
 		

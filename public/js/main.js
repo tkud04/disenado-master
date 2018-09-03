@@ -300,9 +300,9 @@
 		
         slideRange.slider({
         range: true,
-        min: 40,
-        max: 600,
-        values: [ 2000, 100000 ],
+        min: 1000,
+        max: 999000,
+        values: [ 2000, 900000 ],
         slide: function( event, ui ) {
         amount.val( "N" + ui.values[ 0 ] + " - N" + ui.values[ 1 ] );
         }
