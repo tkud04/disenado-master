@@ -69,16 +69,12 @@ Disenado is your one-stop shop for everything you need. With a wide range of pro
 					</div>
 					<div class="row">
 						<div class="copyright-area">
-							<div class="col-md-6 col-sm-6 col-xs-12">
+							<div class="col-md-12 col-xs-12">
 								<div class="copyright">
 									<p>Copyright &copy; 2018 <a href="#" target="_blank">Disenado</a>. All Rights Reserved.</p>   
 								</div>
 							</div>
-							<div class="col-md-6 col-sm-6 col-xs-12">
-								<div class="payment">
-									<img src="{{asset('img/payment/payment.png')}}" alt="">
-								</div>
-							</div>
+		
 						</div>
 					</div>
 				</div>
