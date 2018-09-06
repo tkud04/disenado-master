@@ -116,7 +116,7 @@
 												</div>
 												<h4 class="name"><a href="{{$url}}">{{$p['name']}}</a></h4>
 												<span class="amount">
-													<del><span class="amount-del">&#8358;{{$p['price'] + 200}}</span></del>
+													<del><span class="amount-del">&#8358;{{$p['price'] + rand(2000,5000)}}</span></del>
 													&#8358;{{$p['price']}}
 												</span>
 												<div class="add-to-cart">
@@ -168,7 +168,7 @@
 												</span>
 											</div>
 											<span class="amount">
-												<del><span class="amount-del">{{$p['price'] + 20}}</span></del>
+												<del><span class="amount-del">{{$p['price'] + rand(2000,5000)}}</span></del>
 												&#8358;{{$p['price']}}
 											</span>
 											<p>{{$p['description']}}</p>
