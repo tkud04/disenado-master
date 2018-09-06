@@ -9,7 +9,7 @@
 							@foreach($bs as $b)
 						      <?php
 								$url = url("products/".$b['id']);
-								$cart_url = "bag/".$b['id'];
+								$cart_url = "bag/".$b['id']."/qty/1";
 								$images = $b['images'];
 							  ?>
 							<div class="single-product-list">
@@ -44,7 +44,7 @@
 							@foreach($os as $o)
 						      <?php
 								$url = url("products/".$o['id']);
-								$cart_url = "bag/".$o['id'];
+								$cart_url = "bag/".$o['id']."/qty/1";
 								$images = $o['images'];
 							  ?>							
 							<div class="single-product-list">
@@ -79,7 +79,7 @@
 							@foreach($ss as $s)
 						      <?php
 								$url = url("products/".$s['id']);
-								$cart_url = "bag/".$s['id'];
+								$cart_url = "bag/".$s['id']."/qty/1";
 								$images = $s['images'];
 							  ?>
 							<div class="single-product-list">
@@ -103,7 +103,7 @@
 							@endforeach
 							@endif
 							<div class="pro-more-option">
-								<a href="{{url('shop')}}">View more <i class="vc_btn3-icon fa fa-long-arrow-right"></i></a>
+								<a href="{{url('/')}}">Go to homepage<i class="vc_btn3-icon fa fa-long-arrow-right"></i></a>
 							</div>
 						</div>
 					</div>

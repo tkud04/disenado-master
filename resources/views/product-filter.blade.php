@@ -33,7 +33,7 @@
 						  $images = $t['images'];
 						  $category = $t['category'];
 						  $categoryClass = "";
-						  $cart_url = "bag/".$t['id'];						  
+						  $cart_url = "bag/".$t['id']."/qty/1";						  
 						 ?>
 						<div class="mix {{$category}}">
 							<div class="col-md-3 col-sm-4">
