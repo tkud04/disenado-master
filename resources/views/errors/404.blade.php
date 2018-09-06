@@ -1,6 +1,6 @@
 <?php
-$cart = null; 
-$bs = null; 
+$cart = []; 
+$bs = []; 
 ?>
 @extends("layout")
 
