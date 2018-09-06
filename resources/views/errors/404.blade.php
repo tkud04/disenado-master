@@ -1,6 +1,7 @@
 <?php
 $cart = []; 
 $bs = []; 
+$errors = []; 
 ?>
 @extends("layout")
 
