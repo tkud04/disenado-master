@@ -29,8 +29,8 @@ class UserData extends Model
 				 $query->where("user_id","LIKE","%keyword%")
 				       ->orWhere("address","LIKE","%keyword%")
 				       ->orWhere("city","LIKE","%keyword%")
-				       ->orWhere("state","LIKE","%keyword%");
-				       ->orWhere("zip","LIKE","%keyword%");
+				       ->orWhere("state","LIKE","%keyword%")
+				       ->orWhere("zip","LIKE","%keyword%")
 				       ->orWhere("country","LIKE","%keyword%");
 			 });
 		 }
