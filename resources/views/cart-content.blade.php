@@ -77,7 +77,7 @@
 												<tr class="order-total">
 													<th>Total</th>
 													<td>
-														<strong><span class="amount" id="yuu">{{$ct}}</span></strong>
+														<strong><span class="amount" id="yuu">{{$ct + 1500}}</span></strong>
 													</td>
 												</tr>											
 											</tbody>

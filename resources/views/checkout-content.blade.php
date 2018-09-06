@@ -626,7 +626,7 @@
 															<li>
 																<input type="radio" name="with-shipping" id = "with-shipping" checked/> 
 																<label>
-																	Flat Rate: <span class="amount">&#8358;2500.00</span>
+																	Flat Rate: <span class="amount">&#8358;1500.00</span>
 																</label>
 															</li>
 															<li></li>
@@ -635,7 +635,7 @@
 											</tr>
 											<tr class="order-total">
 												<th>Order Total</th>
-												<td><strong><span class="amount" id="yuu">{{$ct + 2500}}</span></strong></strong>
+												<td><strong><span class="amount" id="yuu">{{$ct + 1500}}</span></strong></strong>
 												</td>
 											</tr>								
 										</tfoot>
@@ -665,21 +665,6 @@
 									        </div>											
 										</div>
 										<!-- ACCORDION END -->	
-										<!-- ACCORDION START -->
-										<h3>
-											<a class="collapsed" role="button" data-toggle="collapse" href="#payment-con3" aria-expanded="false" aria-controls="payment-con3">
-											PayPal 
-											</a>	
-										<img src="img/payment/payment.png" alt="" />
-
-										</h3>
-										<div class="payment-content collapse"  id="payment-con3">
-											<p>Pay via PayPal; you can pay with your credit card if you don't have a PayPal account.</p>
-											<div class="order-button-payment">
-										      <input type="submit" class="i-pay" data-tope="i-paypal" value="Pay via Paypal" />
-									        </div>
-										</div>
-										<!-- ACCORDION END -->									
 									</div>
 								</div>
 							</div>
