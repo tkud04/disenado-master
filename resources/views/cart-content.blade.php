@@ -5,7 +5,7 @@
 					<div class="col-md-12 col-sm-12 col-xs-12">
 					    @if(isset($cart) && count($cart) > 0)
 							<?php $ct = 0; ?>
-						<form action="#">				
+						<form action="{{url('update-cart')}}">				
 							<div class="table-content table-responsive">
 								<table>
 									<thead>
@@ -42,7 +42,7 @@
 								<div class="col-md-8 col-sm-7 col-xs-12">
 									<div class="buttons-cart">
 										<input type="submit" value="Update Cart" />
-										<a href="#">Continue Shopping</a>
+										<a href="#cart-totals">Continue Shopping</a>
 									</div>
 									<div class="coupon">
 										<h3>Coupon</h3>
@@ -54,7 +54,7 @@
 								<div class="col-md-4 col-sm-5 col-xs-12">
 									<div class="cart_totals">
 										<h2>Cart Totals</h2>
-										<table>
+										<table id="cart-totals">
 											<tbody>
 												<tr class="cart-subtotal">
 													<th>Subtotal</th>
@@ -67,7 +67,7 @@
 															<li>
 																<input type="radio" name="with-shipping" id = "with-shipping" checked/> 
 																<label>
-																	Flat Rate: <span class="amount">&#8358;2500.00</span>
+																	Flat Rate: <span class="amount">&#8358;1500.00</span>
 																</label>
 															</li>
 															<li></li>
@@ -83,7 +83,7 @@
 											</tbody>
 										</table>
 										<div class="wc-proceed-to-checkout">
-											<a href="#">Proceed to Checkout</a>
+											<a href="{{url('checkout')}}">Proceed to Checkout</a>
 										</div>
 									</div>
 								</div>
