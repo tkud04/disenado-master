@@ -1,3 +1,7 @@
+<?php
+$cart = null; 
+$bs = null; 
+?>
 @extends("layout")
 
 @section('title',"Not Found")
