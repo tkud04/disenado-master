@@ -6,7 +6,7 @@
                           @include('input-errors', ["errors" => $errors])
                      @endif   
                     
-@if(Session::has('cart-status') && Session::get('cart-status') == "new-user")
+@if(Session::has('signup-status') && Session::get('signup-status') == "success")
 			 <center><div class="alert alert-success">Signup successful! <a href="#" class="legbe">Click here</a> to login and verify your account.</div></center>
 			@endif
 			
