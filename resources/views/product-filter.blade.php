@@ -25,9 +25,7 @@
 						 <?php $itemCount = 0; $total = count($trending); $counter = 0;?>
 				    	@foreach($trending as $t)
 				 		<?php ++$itemCount; ++$counter; if($itemCount >= 5) $itemCount = 1;?>
-		                @if($itemCount == 1)
-                         <div class="row">
-	                    @endif
+	
 					    <?php
 						  $url = url("products/".$t['id']);
 						  $images = $t['images'];
@@ -36,7 +34,7 @@
 						  $cart_url = "bag/".$t['id']."/qty/1";						  
 						 ?>
 						<div class="mix {{$category}}">
-							<div class="col-md-3 col-sm-4">
+							<div class="col-md-3 col-sm-3">
 								<div class="single-product">
 									<div class="product-image fix">
 										<a href="{{$url}}">
@@ -70,9 +68,7 @@
 								</div>
 							</div>
 						</div>
-						@if($itemCount == 4 || $counter == $total)
-                         </div> 
-	                    @endif
+					
 						@endforeach
 						@endif
 					  </div>
