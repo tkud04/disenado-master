@@ -36,8 +36,8 @@
 						  $categoryClass = "";
 						  $cart_url = "bag/".$t['id']."/qty/1";						  
 						 ?>
-						<div class="mix {{$category}}">
-							<div class="col-md-3 col-sm-3">
+						<div class="col-md-3 col-sm-3">
+							<div class="mix {{$category}}">
 								<div class="single-product">
 									<div class="product-image fix">
 										<a href="{{$url}}">
