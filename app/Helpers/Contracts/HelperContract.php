@@ -21,6 +21,7 @@ Interface HelperContract
 		public function getLaneBanner();
 		public function getBrands();
 		public function paginate($items, $perPage);
+        public function isMobile();
         /*public function checkout();*/
 }
  ?>
