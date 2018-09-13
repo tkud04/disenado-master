@@ -34,10 +34,27 @@ class MainController extends Controller {
 		}
 		
 		$cart = $this->helpers->getCart($user);
-		$trending = $this->helpers->getProducts(); shuffle($trending);
-		$bs = $this->helpers->getProducts(); shuffle($bs);
-		$os = $this->helpers->getProducts(); shuffle($os);
-		$ss = $this->helpers->getProducts(); shuffle($ss);
+		$products = $this->helpers->getProducts(); shuffle($products);
+		$trending = []; $bs = []; $os = []; $ss = [];
+		
+		if(count($products) > 12)
+        {
+        	$trending = array_slice($products,0,12);
+           
+            /*$bArr = array_slice($products,12); shuffle($bArr); 
+            $bCount = (count($bArr) > 10) ? 10 : count($bArr);
+            $bs = array_slice($bArr,0,$bCount);
+            
+            $bArr = array_slice($bArr,12); shuffle($bArr); 
+            $bCount = (count($bArr) > 10) ? 10 : count($bArr);
+            $bs = array_slice($bArr,0,$bCount);
+            */
+        }
+        
+        else
+        {
+        	$trending = $products;
+        }
 		
 		$slideBanner = $this->helpers->getSlideBanner();
 		$laneBanner = $this->helpers->getLaneBanner();
@@ -45,8 +62,8 @@ class MainController extends Controller {
 		$brands = $this->helpers->getBrands();
 		
 		#dd($slideBanner);
-
-    	return view('index',compact(['cart','user','bs','os','ss','trending','slideBanner','laneBanner','brands']));
+        $displaySize  = $this->helpers->isMobile() ? 3 : 4;
+    	return view('index',compact(['cart','user','bs','os','ss','trending','slideBanner','laneBanner','brands','displaySize']));
     }
 	
 	
