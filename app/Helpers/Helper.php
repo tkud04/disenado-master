@@ -373,6 +373,17 @@ class Helper implements HelperContract
 			 for($i=0; $i < 4; $i++) array_push($ret,$this->brands[$i]);
 			 return $ret;
            } 
+		   
+		   function getSpecials($arr)
+           {
+			 #bs
+			 $ret = ['bs' => [],'ss' => [],'os' => []];
+			 $chunks = array_chunk($arr,10);
+			 $ret['bs'] = $chunks[0];
+			 $ret['ss'] = $chunks[1];
+			 $ret['os'] = $chunks[2];
+			 return $ret;
+           } 	
            
            
            /**

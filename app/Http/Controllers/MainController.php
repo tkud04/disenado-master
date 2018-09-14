@@ -40,8 +40,8 @@ class MainController extends Controller {
 		if(count($products) > 12)
         {
         	$trending = array_slice($products,0,12);
-           
-            /*$bArr = array_slice($products,12); shuffle($bArr); 
+           $bArr = array_slice($products,12); 
+            /*
             $bCount = (count($bArr) > 10) ? 10 : count($bArr);
             $bs = array_slice($bArr,0,$bCount);
             
@@ -55,6 +55,10 @@ class MainController extends Controller {
         {
         	$trending = $products;
         }
+		
+		shuffle($bArr); 
+		$ret = $this->helpers->getSpecials($bArr);
+		$bs = $ret['bs']; $ss = $ret['ss']; $os = $ret['os'];
 		
 		$slideBanner = $this->helpers->getSlideBanner();
 		$laneBanner = $this->helpers->getLaneBanner();

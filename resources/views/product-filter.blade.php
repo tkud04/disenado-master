@@ -19,11 +19,7 @@
 							<div class="filter" data-filter=".fragrances">Fragrances</div>
 						</div>
 					</div>
-					<script>
-					window.onload = function(){
-						alert("x: {{$displaySize}}");
-					}
-					</script>
+
 					<div id="Container">
 					    @if(isset($trending) && count($trending) > 0)
 						 <?php $itemCount = 0; $total = count($trending); $counter = 0;?>

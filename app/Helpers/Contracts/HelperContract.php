@@ -22,6 +22,7 @@ Interface HelperContract
 		public function getBrands();
 		public function paginate($items, $perPage);
         public function isMobile();
+        public function getSpecials($arr);
         /*public function checkout();*/
 }
  ?>
