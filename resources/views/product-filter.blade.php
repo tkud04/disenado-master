@@ -82,7 +82,9 @@
 					<div class="more-option">
 						<span class="border-icon">
 							<span class="border-icon-bg">
+							    <a href="{{url('shop')}}">
 								<span class="plus-icon">+</span>
+								</a>
 							</span>
 						</span>
 					</div> 

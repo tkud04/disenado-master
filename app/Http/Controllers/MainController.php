@@ -41,14 +41,6 @@ class MainController extends Controller {
         {
         	$trending = array_slice($products,0,12);
            $bArr = array_slice($products,12); 
-            /*
-            $bCount = (count($bArr) > 10) ? 10 : count($bArr);
-            $bs = array_slice($bArr,0,$bCount);
-            
-            $bArr = array_slice($bArr,12); shuffle($bArr); 
-            $bCount = (count($bArr) > 10) ? 10 : count($bArr);
-            $bs = array_slice($bArr,0,$bCount);
-            */
         }
         
         else
