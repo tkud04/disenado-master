@@ -20,7 +20,6 @@
 						</div>
 					</div>
 					<div id="Container">
-					  <div class="row">
 					    @if(isset($trending) && count($trending) > 0)
 						 <?php $itemCount = 0; $total = count($trending); $counter = 0;?>
 				    	@foreach($trending as $t)
@@ -36,7 +35,7 @@
 						  $categoryClass = "";
 						  $cart_url = "bag/".$t['id']."/qty/1";						  
 						 ?>
-						<div class="col-md-3 col-sm-3">
+						<div class="col-md-3 col-sm-4">
 							<div class="mix {{$category}}">
 								<div class="single-product">
 									<div class="product-image fix">
@@ -76,7 +75,6 @@
 	                    endif-->
 						@endforeach
 						@endif
-					  </div>
 					</div>
 				</div>
 				<div class="row">
