@@ -26,9 +26,9 @@
 				    	@foreach($trending as $t)
 				
 				 		<?php ++$itemCount; ++$counter; if($itemCount >= ($displaySize + 1)) $itemCount = 1;?>
-	                    @if($itemCount == 1)
+	                    <!--if($itemCount == 1)
                          <div class="row">
-	                    @endif
+	                    endif-->
 					    <?php
 						  $url = url("products/".$t['id']);
 						  $images = $t['images'];
@@ -71,9 +71,9 @@
 								</div>
 							</div>
 						</div>
-						@if($itemCount == $displaySize || $counter == $total)
+						<!--if($itemCount == $displaySize || $counter == $total)
                          </div> 
-	                    @endif
+	                    endif-->
 						@endforeach
 						@endif
 					  </div>
