@@ -70,7 +70,7 @@
 								</div>
 							</div>
 						</div>
-						@--if($itemCount % $displaySize == 0 || $counter == $total)
+						@if($itemCount % $displaySize == 0 || $counter == $total)
                          </div> 
 	                    @endif
 						@endforeach
