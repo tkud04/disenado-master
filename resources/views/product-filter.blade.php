@@ -19,12 +19,17 @@
 							<div class="filter" data-filter=".fragrances">Fragrances</div>
 						</div>
 					</div>
+					<script>
+					window.onload = function(){
+						alert("x: {{$displaySize}}");
+					}
+					</script>
 					<div id="Container">
 					    @if(isset($trending) && count($trending) > 0)
 						 <?php $itemCount = 0; $total = count($trending); $counter = 0;?>
 				    	@foreach($trending as $t)
 				
-				 		<?php ++$itemCount; ++$counter; if($itemCount >= ($displaySize + 1)) $itemCount = 1;?>
+				 		<?php ++$itemCount; ++$counter; if($itemCount > $displaySize) $itemCount = 1;?>
 	                    @if($itemCount % $displaySize == 0)
                          <div class="row">
 	                    @endif
