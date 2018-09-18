@@ -177,6 +177,23 @@ class Helper implements HelperContract
 			else{}
 			
             return $ret;			
+          }
+		  
+		  function updateCart($user,$itemID,$newQty)
+          {
+			  $ip = getenv("REMOTE_ADDR");
+			  $ret = [];
+			  $carts = null;
+			  
+          	  if($user != null) $item = Cart::where('user_id',$user->id)
+				                             ->where('id',$itemID)->first();
+					   
+		    if($item != null)
+			{
+				$item->update(['qty' => $newQty]);
+			}
+			
+			else{}
           } 		  
           
           
@@ -322,9 +339,6 @@ class Helper implements HelperContract
 		   function search($term,$opt)
            {
 			 $ret = [];
-			 $ret[0] = [];
-			 $ret[1] = [];
-			 $ret[2] = [];
 			 $switch = 0;
 			 
            	 #$u = $this->searchUsers($term);
@@ -332,7 +346,7 @@ class Helper implements HelperContract
 			 $pd = $this->searchProductData($term,$opt);
 			 $p = $this->searchProducts($term);
 			 
-			 $productResults = $pd + $p;
+			 $productResults = array_merge($pd,$p);
 			 $productResults = array_unique($productResults);
 			 
 			 
@@ -340,9 +354,7 @@ class Helper implements HelperContract
 			 {
 				 $temp = [];
 				 $temp = $this->getProduct($pr);
-				 array_push($ret[$switch],$temp);
-				 if($switch >= 2) $switch = 0;
-				 else ++$switch;
+				 array_push($ret,$temp);
 			 }
 			 
 			 return $ret;

@@ -645,24 +645,21 @@
 									<div class="payment-accordion">
 										<!-- ACCORDION START -->
 										<h3 >
-											<a class="collapsed" role="button" data-toggle="collapse" href="#payment-con" aria-expanded="false" aria-controls="payment-con">Direct Bank Transfer</a>
+											<a class="collapsed" role="button" data-toggle="collapse" href="#payment-con" aria-expanded="false" aria-controls="payment-con">Pay on Delivery</a>
 										</h3>
 										<div class="payment-content collapse" id="payment-con">
-											<p>Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order won't be shipped until the funds have cleared in our account.</p>
+											<p>Your order will be delivered to your doorstep after which you make payment. Please use your Order ID as the payment reference. We only accept payment in <strong>cash</strong> or via <strong>bank transfer</strong> upon delivery.</p>
 											<div class="order-button-payment">
-										      <input type="submit" class="i-pay" data-tope="i-bank" value="Pay to our bank account" />
+										      <input type="submit" class="i-pay" data-tope="i-bank" value="Pay on delivery" />
 									        </div>											
 										</div>
 										<!-- ACCORDION END -->	
 										<!-- ACCORDION START -->
 										<h3>
-											<a class="collapsed" role="button" data-toggle="collapse" href="#payment-con2" aria-expanded="false" aria-controls="payment-con2">Cheque Payment</a>
+											<a class="collapsed" role="button" data-toggle="collapse" href="#payment-con2" aria-expanded="false" aria-controls="payment-con2">Pay Online</a>
 										</h3>
 										<div class="payment-content collapse" id="payment-con2">
-											<p>Please send your check to Luxury Affairs, Store Street, Store Town, Store State / County, Store Postcode.</p>
-											<div class="order-button-payment">
-										      <input type="submit" class="i-pay" data-tope="i-check" value="Send us a check" />
-									        </div>											
+											<p>We currently do not accept payments online, please use any of the other payment methods available.</p>					
 										</div>
 										<!-- ACCORDION END -->	
 									</div>

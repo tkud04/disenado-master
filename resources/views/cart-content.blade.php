@@ -5,7 +5,10 @@
 					<div class="col-md-12 col-sm-12 col-xs-12">
 					    @if(isset($cart) && count($cart) > 0)
 							<?php $ct = 0; ?>
-						<form action="{{url('update-cart')}}">				
+						<form action="{{url('update-cart')}}" method="post">		
+                           {{ csrf_field() }}						
+						   <input type="hidden" name="op" value="update"/>
+						   
 							<div class="table-content table-responsive">
 								<table>
 									<thead>
@@ -25,12 +28,15 @@
 								        $images = $p['images'];
 										$rm_url = url('remove-from-cart')."/".$c['id'];
 										$ct += ($c['qty'] * $p['price']);
+										$cname = "ccd-".$c['id'];
+										$nqt = "nqt-".$c['id'];
 							           ?>
+									   <input type="hidden" name="ccd" value="{{$cname}}"/>
 										<tr>
 											<td class="product-thumbnail"><a href="#"><img src="{{$images[0]}}" alt="" /></a></td>
 											<td class="product-name"><a href="#">{{$p['name']}}</a></td>
 											<td class="product-price"><span class="amount">&#8358;{{$p['price']}}</span></td>
-											<td class="product-quantity"><input type="number" value="{{$c['qty']}}" /></td>
+											<td class="product-quantity"><input name="{{$nqt}}" type="number" value="{{$c['qty']}}" /></td>
 											<td class="product-subtotal">&#8358;{{$ct}}</td>
 											<td class="product-remove"><a href="{{$rm_url}}"><i class="fa fa-times"></i></a></td>
 										</tr>

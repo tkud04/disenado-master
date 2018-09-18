@@ -79,7 +79,8 @@ class MainController extends Controller {
 		
     	$ret = $this->helpers->getProducts();
 		$cart = $this->helpers->getCart($user);
-		return view('shop',compact(['ret','cart','user']));
+		 $displaySize  = $this->helpers->isMobile() ? 3 : 4;
+		return view('shop',compact(['ret','cart','user','displaySize']));
     }
 	
 	/**
@@ -218,6 +219,56 @@ class MainController extends Controller {
 			return redirect()->intended('shop');
 		}
     }
+	
+	
+	/**
+	 * Show the application Checkout screen to the user.
+	 *
+	 * @return Response
+	 */
+    public function postUpdateCart(Request $request)
+    {
+		$user = null;
+		$cart = null;
+		
+		if(Auth::check())
+		{
+			$user = Auth::user();
+			$cart = $this->helpers->getCart($user);
+		}
+			
+		$req = $request->all();
+        
+        $validator = Validator::make($req, [
+                             'op' => 'required',
+         ]);
+         
+         if($validator->fails())
+         {
+             $messages = $validator->messages();
+             return redirect()->back()->withInput()->with('errors',$messages);
+         }
+		 else
+		 {
+			 $op = $req['op'];
+			 
+			 if($op == "update")
+			 {
+				 foreach($cart as $c)
+				 {
+					 $cname = "ccd-".$c['id'];
+					 $nqt = "nqt-".$c['id'];
+					 
+					 if(isset($req[$cname]))
+					 {
+						 $this->helpers->updateCart($user,$c['id'],$req[$nqt]);
+					 }
+				 }
+			 }
+			 return redirect()->intended('cart'); 
+			 
+		 }                
+    }   
 
 	/**
 	 * Show the application Checkout screen to the user.
