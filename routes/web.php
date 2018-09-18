@@ -23,7 +23,7 @@ Route::get('products/{id?}', 'MainController@getProducts');
 Route::get('cart', 'MainController@getCart');
 Route::get('bag/{id?}/qty/{qty?}', 'MainController@getAddToCart');
 Route::get('remove-from-cart/{id?}', 'MainController@getRemoveFromCart');
-Route::get('update-cart', 'MainController@postUpdateCart');
+Route::post('update-cart', 'MainController@postUpdateCart');
 Route::get('checkout', 'MainController@getCheckout');
 Route::post('checkout', 'MainController@postCheckout');
 Route::post('search', 'MainController@postSearch');
