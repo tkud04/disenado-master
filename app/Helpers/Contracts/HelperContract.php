@@ -23,6 +23,7 @@ Interface HelperContract
 		public function paginate($items, $perPage);
         public function isMobile();
         public function getSpecials($arr);
+        public function updateCart($user,$itemID,$newQty);
         /*public function checkout();*/
 }
  ?>
