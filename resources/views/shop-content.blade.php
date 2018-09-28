@@ -7,11 +7,12 @@
 						<div class="widget">
 							<h3>Categories</h3>
 							<ul>
-								<li><a href="#" class="shop-laptops">Laptops</a></li>
-								<li><a href="#" class="shop-fashion">Fashion</a></li>
-								<li><a href="#" class="shop-tablets">Tablets</a></li>
-								<li><a href="#" class="shop-electronics">Electronics</a></li>
-								<li><a href="#" class="shop-fragrances">Fragrances</a></li>
+								<li><a href="#" id="s-all" class="shop-laptops">All</a></li>
+								<li><a href="#" id="s-laptops" class="shop-laptops">Laptops</a></li>
+								<li><a href="#" id="s-fashion" class="shop-fashion">Fashion</a></li>
+								<li><a href="#" id="s-tablets" class="shop-tablets">Tablets</a></li>
+								<li><a href="#" id="s-electronics" class="shop-electronics">Electronics</a></li>
+								<li><a href="#" id="s-fragrances" class="shop-fragrances">Fragrances</a></li>
 							</ul>    
 						</div>
 						<div class="widget">
@@ -83,7 +84,7 @@
 							<div role="tabpanel" class="tab-pane active" id="home">
 								<div class="row">
 									<div class="product-area">
-									<?php $itemCount = 0; $total = count($ret); $counter = 0;?>
+									<?php $itemCount = 0; $total = count($trending); $counter = 0;?>
 									@foreach($ret as $p)
 									     <?php
 										   $url = "products/".$p['id'];
@@ -91,9 +92,6 @@
 										   $images = $p['images'];
 										   ++$itemCount; ++$counter; if($itemCount > $displaySize) $itemCount = 1;
 										 ?>
-										 @if($itemCount % $displaySize == 0)
-                                          <div class="row">
-	                                     @endif
 										<div class="col-md-4 col-sm-4 col-xs-12">
 											<div class="single-product">
 												<div class="product-image fix">
@@ -120,9 +118,6 @@
 												</div>
 											</div>
 										</div>
-										@if($itemCount % $displaySize == 0 || $counter == $total)
-                                         </div> 
-	                                    @endif
 										@endforeach
 									</div> 
 								</div>
