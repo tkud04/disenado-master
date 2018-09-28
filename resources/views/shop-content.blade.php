@@ -84,7 +84,7 @@
 							<div role="tabpanel" class="tab-pane active" id="home">
 								<div class="row">
 									<div class="product-area">
-									<?php $itemCount = 0; $total = count($trending); $counter = 0;?>
+									<?php $itemCount = 0; $total = count($ret); $counter = 0;?>
 									@foreach($ret as $p)
 									     <?php
 										   $url = "products/".$p['id'];
