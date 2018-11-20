@@ -395,7 +395,22 @@ class Helper implements HelperContract
 			 $ret['ss'] = $chunks[1];
 			 $ret['os'] = $chunks[2];
 			 return $ret;
-           } 	
+           } 
+
+
+function getClients()
+{
+   $arr = [
+                ["name" => "Disenado Nigeria Stores","image" => "logo.jpg","link" => "www.disenado.com.ng"],
+                ["name" => "Barad Innovations","image" => "barad.jpg","link" => "www.baradinnovations.com.ng"],
+                ["name" => "Escalate Innovations","image" => "escalate.jpg","link" => "www.escalateinnovations.com.ng"],
+                ["name" => "Stan designs","image" => "standesigns.png","link" => "www.standesigns.ml"],
+                ["name" => "SafeBets","image" => "safebets.png","link" => "safebets.disenado.com.ng"],
+                ["name" => "Doubleyourbtc","image" => "doubleyourbtc.png","link" => "#"]
+              ];
+              
+   return $arr;
+}		   
            
            
            /**

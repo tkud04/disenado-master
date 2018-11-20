@@ -287,6 +287,25 @@ class MainController extends Controller {
 		$cart = $this->helpers->getCart($user);
     	return view('checkout',compact(['cart','user']));
     }
+	
+		/**
+	 * Show the application Software Consulting screen to the user.
+	 *
+	 * @return Response
+	 */
+	public function getSoftware()
+    {
+		$user = null;
+		
+		if(Auth::check())
+		{
+			$user = Auth::user();
+		}
+		
+		$cart = $this->helpers->getCart($user);
+		$clients = $this->helpers->getClients();
+    	return view('webdesign.index',compact(['cart','user','clients']));
+    }
 
     /**
 	 * Show the application Add Product screen to the user.

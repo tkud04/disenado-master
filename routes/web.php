@@ -12,6 +12,7 @@
 */
 
 Route::get('/', 'MainController@index');
+Route::get('software-consulting', 'MainController@getSoftware');
 
 Route::post('login', 'LoginController@postLogin');
 Route::post('register', 'LoginController@postRegister');

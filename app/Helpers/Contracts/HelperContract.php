@@ -25,5 +25,6 @@ Interface HelperContract
         public function getSpecials($arr);
         public function updateCart($user,$itemID,$newQty);
         /*public function checkout();*/
+        public function getClients();
 }
  ?>
