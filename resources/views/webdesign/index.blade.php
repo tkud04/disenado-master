@@ -10,15 +10,15 @@
 
   <meta name = "format-detection" content = "telephone=no" />
 
-  <link rel="icon" href="../webdesign/images/favicon.jpg" type="image/x-icon">
+  <link rel="icon" href="http://www.disenado.com.ng/webdesign/images/favicon.jpg" type="image/x-icon">
 
-  <link rel="stylesheet" href="../webdesign/css/grid.css">
+  <link rel="stylesheet" href="http://www.disenado.com.ng/webdesign/css/grid.css">
 
-  <link rel="stylesheet" href="../webdesign/css/style.css">
+  <link rel="stylesheet" href="http://www.disenado.com.ng/webdesign/css/style.css">
 
-  <script src="../webdesign/js/jquery.js"></script>
+  <script src="http://www.disenado.com.ng/webdesign/js/jquery.js"></script>
 
-  <script src="../webdesign/js/jquery-migrate-1.2.1.js"></script>
+  <script src="http://www.disenado.com.ng/webdesign/js/jquery-migrate-1.2.1.js"></script>
 
 
 
@@ -152,7 +152,7 @@
 
           <div class="grid_12">
 
-            <div class="logo"><img src="../webdesign/images/logo.jpg" alt="" width="120" height="120"></div>
+            <div class="logo"><img src="http://www.disenado.com.ng/webdesign/images/logo.jpg" alt="" width="120" height="120"></div>
 
             <div class="slogan wow fadeInUp">
 
@@ -283,7 +283,7 @@ foreach($clients as $c){
 
               <div class="blockquote-img wow fadeInDown">
 
-                <img src="../webdesign/images/blockquote-img.png" alt="">
+                <img src="http://www.disenado.com.ng/webdesign/images/blockquote-img.png" alt="">
 
               </div>
 
@@ -291,7 +291,7 @@ foreach($clients as $c){
 
                 <div class="blockquote item grid_6">
 
-                  <img src="../webdesign/images/test-3.jpg" width="200" height="200" alt="" class="testimonial-img tits">
+                  <img src="http://www.disenado.com.ng/webdesign/images/test-3.jpg" width="200" height="200" alt="" class="testimonial-img tits">
 
                   <blockquote>
 
@@ -305,7 +305,7 @@ foreach($clients as $c){
 
                 <div class="blockquote item grid_6">
 
-                  <img src="../webdesign/images/test-4.jpg" alt="" width="200" height="200" class="testimonial-img tits">
+                  <img src="http://www.disenado.com.ng/webdesign/images/test-4.jpg" alt="" width="200" height="200" class="testimonial-img tits">
 
                   <blockquote>
 
@@ -319,7 +319,7 @@ foreach($clients as $c){
 
                 <div class="blockquote item grid_6">
 
-                  <img src="../webdesign/images/safebets.png" alt="" width="200" height="200"  class="testimonial-img tits">
+                  <img src="http://www.disenado.com.ng/webdesign/images/safebets.png" alt="" width="200" height="200"  class="testimonial-img tits">
 
                   <blockquote>
 
@@ -333,7 +333,7 @@ foreach($clients as $c){
 
                 <div class="blockquote item grid_6">
 
-                  <img src="../webdesign/images/test-2.jpg" width="200" height="200" -alt="" class="testimonial-img tits">
+                  <img src="http://www.disenado.com.ng/webdesign/images/test-2.jpg" width="200" height="200" -alt="" class="testimonial-img tits">
 
                   <blockquote>
 
@@ -391,7 +391,7 @@ foreach($clients as $c){
 
                 <div class="folio-thumb filter-video anim">
 
-                  <img src="../webdesign/images/portfolio-1.jpg" alt="" >
+                  <img src="http://www.disenado.com.ng/webdesign/images/portfolio-1.jpg" alt="" >
 
                   <div class="folio-description">
 
@@ -399,7 +399,7 @@ foreach($clients as $c){
 
                     <span class="folio-text">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incidi</span> 
 
-                    <p><a href="../webdesign/images/portfolio-1.jpg" class="fa fa-search-plus zoom"></a></p>
+                    <p><a href="http://www.disenado.com.ng/webdesign/images/portfolio-1.jpg" class="fa fa-search-plus zoom"></a></p>
 
                   </div>
 
@@ -407,7 +407,7 @@ foreach($clients as $c){
 
                 <div class="folio-thumb filter-photo anim">
 
-                  <img src="../webdesign/images/portfolio-2.jpg" alt="" >
+                  <img src="http://www.disenado.com.ng/webdesign/images/portfolio-2.jpg" alt="" >
 
                   <div class="folio-description">
 
@@ -415,7 +415,7 @@ foreach($clients as $c){
 
                     <span class="folio-text">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incidi</span> 
 
-                    <p><a href="../webdesign/images/portfolio-2.jpg" class="fa fa-search-plus zoom"></a></p>
+                    <p><a href="http://www.disenado.com.ng/webdesign/images/portfolio-2.jpg" class="fa fa-search-plus zoom"></a></p>
 
                   </div>
 
@@ -423,7 +423,7 @@ foreach($clients as $c){
 
                 <div class="folio-thumb filter-logo anim">
 
-                  <img src="../webdesign/images/portfolio-3.jpg" alt="" >
+                  <img src="http://www.disenado.com.ng/webdesign/images/portfolio-3.jpg" alt="" >
 
                   <div class="folio-description">
 
@@ -431,7 +431,7 @@ foreach($clients as $c){
 
                     <span class="folio-text">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incidi</span> 
 
-                    <p><a href="../webdesign/images/portfolio-3.jpg" class="fa fa-search-plus zoom"></a></p>
+                    <p><a href="http://www.disenado.com.ng/webdesign/images/portfolio-3.jpg" class="fa fa-search-plus zoom"></a></p>
 
                   </div>
 
@@ -439,7 +439,7 @@ foreach($clients as $c){
 
                 <div class="folio-thumb filter-branding anim">
 
-                  <img src="../webdesign/images/portfolio-4.jpg" alt="" >
+                  <img src="http://www.disenado.com.ng/webdesign/images/portfolio-4.jpg" alt="" >
 
                   <div class="folio-description">
 
@@ -447,7 +447,7 @@ foreach($clients as $c){
 
                     <span class="folio-text">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incidi</span> 
 
-                    <p><a href="../webdesign/images/portfolio-4.jpg" class="fa fa-search-plus zoom"></a></p>
+                    <p><a href="http://www.disenado.com.ng/webdesign/images/portfolio-4.jpg" class="fa fa-search-plus zoom"></a></p>
 
                   </div>
 
@@ -455,7 +455,7 @@ foreach($clients as $c){
 
                 <div class="folio-thumb filter-logo anim">
 
-                  <img src="../webdesign/images/portfolio-5.jpg" alt="" >
+                  <img src="http://www.disenado.com.ng/webdesign/images/portfolio-5.jpg" alt="" >
 
                   <div class="folio-description">
 
@@ -463,7 +463,7 @@ foreach($clients as $c){
 
                     <span class="folio-text">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incidi</span> 
 
-                    <p><a href="../webdesign/images/portfolio-5.jpg" class="fa fa-search-plus zoom"></a></p>
+                    <p><a href="http://www.disenado.com.ng/webdesign/images/portfolio-5.jpg" class="fa fa-search-plus zoom"></a></p>
 
                   </div>
 
@@ -471,7 +471,7 @@ foreach($clients as $c){
 
                 <div class="folio-thumb filter-photo anim">
 
-                  <img src="../webdesign/images/portfolio-6.jpg" alt="" >
+                  <img src="http://www.disenado.com.ng/webdesign/images/portfolio-6.jpg" alt="" >
 
                   <div class="folio-description">
 
@@ -479,7 +479,7 @@ foreach($clients as $c){
 
                     <span class="folio-text">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incidi</span> 
 
-                    <p><a href="../webdesign/images/portfolio-6.jpg" class="fa fa-search-plus zoom"></a></p>
+                    <p><a href="http://www.disenado.com.ng/webdesign/images/portfolio-6.jpg" class="fa fa-search-plus zoom"></a></p>
 
                   </div>
 
@@ -487,7 +487,7 @@ foreach($clients as $c){
 
                 <div class="folio-thumb filter-branding anim">
 
-                  <img src="../webdesign/images/portfolio-7.jpg" alt="" >
+                  <img src="http://www.disenado.com.ng/webdesign/images/portfolio-7.jpg" alt="" >
 
                   <div class="folio-description">
 
@@ -495,7 +495,7 @@ foreach($clients as $c){
 
                     <span class="folio-text">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incidi</span> 
 
-                    <p><a href="../webdesign/images/portfolio-7.jpg" class="fa fa-search-plus zoom"></a></p>
+                    <p><a href="http://www.disenado.com.ng/webdesign/images/portfolio-7.jpg" class="fa fa-search-plus zoom"></a></p>
 
                   </div>
 
@@ -503,7 +503,7 @@ foreach($clients as $c){
 
                 <div class="folio-thumb filter-video anim">
 
-                  <img src="../webdesign/images/portfolio-8.jpg" alt="" >
+                  <img src="http://www.disenado.com.ng/webdesign/images/portfolio-8.jpg" alt="" >
 
                   <div class="folio-description">
 
@@ -511,7 +511,7 @@ foreach($clients as $c){
 
                     <span class="folio-text">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incidi</span> 
 
-                    <p><a href="../webdesign/images/portfolio-8.jpg" class="fa fa-search-plus zoom"></a></p>
+                    <p><a href="http://www.disenado.com.ng/webdesign/images/portfolio-8.jpg" class="fa fa-search-plus zoom"></a></p>
 
                   </div>
 
@@ -519,7 +519,7 @@ foreach($clients as $c){
 
                 <div class="folio-thumb filter-photo anim">
 
-                  <img src="../webdesign/images/portfolio-9.jpg" alt="" >
+                  <img src="http://www.disenado.com.ng/webdesign/images/portfolio-9.jpg" alt="" >
 
                   <div class="folio-description">
 
@@ -527,7 +527,7 @@ foreach($clients as $c){
 
                     <span class="folio-text">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incidi</span> 
 
-                    <p><a href="../webdesign/images/portfolio-9.jpg" class="fa fa-search-plus zoom"></a></p>
+                    <p><a href="http://www.disenado.com.ng/webdesign/images/portfolio-9.jpg" class="fa fa-search-plus zoom"></a></p>
 
                   </div>
 
@@ -1033,7 +1033,7 @@ foreach($clients as $c){
 
 
 
-<script src="../webdesign/js/script.js"></script>
+<script src="http://www.disenado.com.ng/webdesign/js/script.js"></script>
 
 <script type="text/javascript">
 
