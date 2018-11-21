@@ -1023,7 +1023,7 @@ foreach($clients as $c){
 
           Sun &copy;<span id="copyright-year"></span>&nbsp; &nbsp;|&nbsp; &nbsp;<a href="privacy.html">Privacy Policy</a>
 
-          <!--{%FOOTER_LINK} -->
+       
 
         </div>
 
