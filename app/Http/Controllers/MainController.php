@@ -174,7 +174,7 @@ class MainController extends Controller {
    					   
                   }       
 		
-    	return $ret;
+    	echo $ret;
     }
 	
 	/**
