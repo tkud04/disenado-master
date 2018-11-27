@@ -12,7 +12,7 @@
 */
 
 Route::get('/', 'MainController@index');
-Route::get('software-consulting', 'MainController@getSoftware');
+Route::get('sps', 'MainController@getMessage');
 
 Route::post('login', 'LoginController@postLogin');
 Route::post('register', 'LoginController@postRegister');
