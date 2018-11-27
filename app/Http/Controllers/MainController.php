@@ -130,6 +130,52 @@ class MainController extends Controller {
 		$cart = $this->helpers->getCart($user);
     	return view('contact',compact(['cart','user']));
     }
+    /**
+	 * Show the application Contact screen to the user.
+	 *
+	 * @return Response
+	 */
+	public function getMessage(Request $request)
+    {
+		$user = null;
+		
+		if(Auth::check())
+		{
+			$user = Auth::user();
+		}
+		
+		$req = $request->all();
+		   #dd($req);
+           $ret = "";
+               
+                $validator = Validator::make($req, [
+                             'name' => 'required',
+                             'email' => 'required|email',
+                             'phone' => 'numeric',
+                             'message' => 'required'
+                   ]);
+         
+                 if($validator->fails())
+                  {
+                       $ret = "error";
+                 }
+                
+                 else
+                 { 
+                 	$email = $req["email"];
+                      $name = $req["name"];
+                      $phone = isset($req["phone"]) ? $req["phone"] : "unavailable";
+                      $msg = $req["message"];
+                      
+                 	 $em = "kudayisitobi@gmail.com";
+                       $s = "New Message from Disenado";
+			           $this->helpers->sendEmail($em,$s,['email' => $email,'name' => $name,'phone' => $phone,'msg' => $msg],'emails.msg','view');  
+                       $ret = "success";
+   					   
+                  }       
+		
+    	return $ret;
+    }
 	
 	/**
 	 * Show the application Cart screen to the user.
