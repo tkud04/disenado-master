@@ -13,7 +13,7 @@
 						<div class="tst-crosol">
 							<div class="testimonial">
 								<div class="tstmnil-content">
-									<p>I love shopping with luxury affairs they seem to always have the items I want!</p>
+									<p>I love shopping with Disenado they seem to always have the items I want!</p>
 								</div>
 								<div class="info">
 									<div class="neme">
@@ -21,6 +21,32 @@
 									</div>
 									<div class="status">
 										<p>Ikeja, Lagos</p>
+									</div>
+								</div>	
+							</div> 
+							<div class="testimonial">
+								<div class="tstmnil-content">
+									<p>Their items are good quality, what you see is what you get</p>
+								</div>
+								<div class="info">
+									<div class="neme">
+										<p>Tolani</p>
+									</div>
+									<div class="status">
+										<p>Iba Estate, Lagos</p>
+									</div>
+								</div>	
+							</div> 
+							<div class="testimonial">
+								<div class="tstmnil-content">
+									<p>One of the best e-commerce stores I've come across,easy to use and they deliver on time</p>
+								</div>
+								<div class="info">
+									<div class="neme">
+										<p>Samuel</p>
+									</div>
+									<div class="status">
+										<p>Akoka, Lagos</p>
 									</div>
 								</div>	
 							</div> 
@@ -39,7 +65,7 @@
 							</div>
 							<div class="testimonial">
 								<div class="tstmnil-content">
-									<p>I bought all my jewellry from luxury affairs :)</p>
+									<p>I bought all my jewellry from Disenado :)</p>
 								</div>
 								<div class="info">
 									<div class="neme">
