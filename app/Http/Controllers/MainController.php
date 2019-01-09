@@ -331,11 +331,55 @@ class MainController extends Controller {
 		if(Auth::check())
 		{
 			$user = Auth::user();
+			$cart = $this->helpers->getCart($user);
+    	    return view('checkout',compact(['cart','user']));
+		}
+		else
+		{
+			return redirect()->intended('/');
 		}
 		
-		$cart = $this->helpers->getCart($user);
-    	return view('checkout',compact(['cart','user']));
     }
+	
+	/**
+	 * Show the application Checkout screen to the user.
+	 *
+	 * @return Response
+	 */
+	 
+    public function postCheckout(Request $request)
+    {
+		$user = null;
+		
+		if(Auth::check())
+		{
+			$user = Auth::user();
+		}
+			
+		$req = $request->all();
+        dd($rerq);
+		
+        $validator = Validator::make($req, [
+                             'term' => 'required',
+                             'opt' => 'required',
+         ]);
+         
+         if($validator->fails())
+         {
+             $messages = $validator->messages();
+             return redirect()->back()->withInput()->with('errors',$messages);
+         }
+		 else
+		 {
+			 $term = $req['term'];
+			 $opt = $req['opt'];
+			 $searchResults = $this->helpers->search($term,$opt);
+			 $bs = $this->helpers->getProducts(); shuffle($bs);
+			 $cart = $this->helpers->getCart($user);
+			 #dd($searchResults);
+			 return view('results',compact(['searchResults','bs','cart']));
+		 }                
+    }   
 	
 		/**
 	 * Show the application Software Consulting screen to the user.
