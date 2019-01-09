@@ -31,7 +31,7 @@
 										$cname = "ccd-".$c['id'];
 										$nqt = "nqt-".$c['id'];
 							           ?>
-									   <input type="hidden" name="ccd" value="{{$cname}}"/>
+									   <input type="hidden" name="{{$cname}}" value="ccd"/>
 										<tr>
 											<td class="product-thumbnail"><a href="#"><img src="{{$images[0]}}" alt="" /></a></td>
 											<td class="product-name"><a href="#">{{$p['name']}}</a></td>
@@ -64,7 +64,7 @@
 											<tbody>
 												<tr class="cart-subtotal">
 													<th>Subtotal</th>
-													<td><span class="amount">{{$ct}}</span></td>
+													<td><span class="amount">">&#8358;{{$ct}}.00</span></td>
 												</tr>
 												<tr class="shipping">
 													<th>Shipping</th>
@@ -83,7 +83,7 @@
 												<tr class="order-total">
 													<th>Total</th>
 													<td>
-														<strong><span class="amount" id="yuu">{{$ct + 1500}}</span></strong>
+														<strong><span class="amount" id="yuu">&#8358;{{$ct + 1500}}.00</span></strong>
 													</td>
 												</tr>											
 											</tbody>

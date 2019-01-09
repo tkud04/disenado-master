@@ -189,10 +189,13 @@ class MainController extends Controller {
 		if(Auth::check())
 		{
 			$user = Auth::user();
+		    $cart = $this->helpers->getCart($user);
+    	    return view('cart',compact(['cart','user']));
 		}
-		
-		$cart = $this->helpers->getCart($user);
-    	return view('cart',compact(['cart','user']));
+		else
+		{
+			return redirect()->intended('/');
+		}
     }
 	
 	/**
