@@ -19,13 +19,23 @@ use Illuminate\Pagination\LengthAwarePaginator;
 class Helper implements HelperContract
 {
 
-         protected $laneBanner = [["img"=>"img/downloads/phone1_1.jpg","url"=>"shop"],
-								   ["img"=>"img/downloads/watch1_1.jpg","url"=>"shop"],
+         protected $laneBanner = [["img"=>"img/bina/banner-accessories-1.jpg","url"=>"shop"],
+								   ["img"=>"img/bina/banner-accessories-2.jpg","url"=>"shop"],
+								   ["img"=>"img/bina/banner-accessories-3.jpg","url"=>"shop"],
+								   ["img"=>"img/bina/banner-fashion-1.jpg","url"=>"shop"],
+								   ["img"=>"img/bina/banner-fashion-2.jpg","url"=>"shop"],
+								   ["img"=>"img/bina/banner-fashion-3.jpg","url"=>"shop"],
+								   ["img"=>"img/bina/banner-fashion-4.jpg","url"=>"shop"],
+								   ["img"=>"img/bina/banner-laptops-1.jpg","url"=>"shop"],
+								   ["img"=>"img/bina/banner-laptops-2.jpg","url"=>"shop"],
+								   ["img"=>"img/bina/banner-laptops-3.jpg","url"=>"shop"],
+								   ["img"=>"img/bina/banner-laptops-4.jpg","url"=>"shop"],
+								   ["img"=>"img/bina/banner-laptops-5.jpg","url"=>"shop"],
+								   ["img"=>"img/bina/banner-phones-1.jpg","url"=>"shop"],
+								   ["img"=>"img/bina/banner-phones-2.jpg","url"=>"shop"],
 		                         ];
 								 
-         protected $slideBanner = [["img"=>"img/downloads/laptop1_1.jpg","url"=>"shop"],
-								   ["img"=>"img/downloads/tab1_1.jpg","url"=>"shop"],
-		                         ];
+         protected $slideBanner = $laneBanner;
          
 		 protected $brands = ["img/brand/brand3.png",
 		                      "img/brand/brand4.png",
