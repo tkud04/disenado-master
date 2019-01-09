@@ -37,7 +37,7 @@
 											<td class="product-name"><a href="#">{{$p['name']}}</a></td>
 											<td class="product-price"><span class="amount">&#8358;{{$p['price']}}</span></td>
 											<td class="product-quantity"><input name="{{$nqt}}" type="number" value="{{$c['qty']}}" /></td>
-											<td class="product-subtotal">&#8358;{{$ct}}</td>
+											<td class="product-subtotal">&#8358;{{$c['qty'] * $p['price']}}</td>
 											<td class="product-remove"><a href="{{$rm_url}}"><i class="fa fa-times"></i></a></td>
 										</tr>
 									@endforeach

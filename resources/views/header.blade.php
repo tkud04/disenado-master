@@ -49,7 +49,7 @@ img.logog{
                                                     <h4><a href="#">{{$p['name']}}</a></h4>
                                                     <span class="quantity">
 													{{$c['qty']}} × 
-                                                        <span class="amount">{{$p['price']}}</span>
+                                                        <span class="amount">&#8358;{{$p['price']}}</span>
                                                     </span>
                                                 </div>
                                                 <div class="close-x">
@@ -58,7 +58,7 @@ img.logog{
                                             </div>
                                         </li>
 									  @endforeach
-                                        <li><p class="total">Total: <span class="amount">{{$ct}}</span></p></li>
+                                        <li><p class="total">Sub-total: <span class="amount">&#8358;{{$ct}}</span></p></li>
                                         <li>
                                             <div class="view"><a href="{{url('checkout')}}">Checkout</a></div>
                                             <div class="chack-out"><a href="{{url('cart')}}">View Cart</a></div>
