@@ -645,16 +645,16 @@
 									<div class="payment-accordion">
 										<!-- ACCORDION START -->
 										<h3 >
-											<a class="collapsed" role="button" data-toggle="collapse" href="#payment-con" aria-expanded="false" aria-controls="payment-con">Pay on Delivery</a>
+											<a class="collapsed" role="button" data-toggle="collapse" href="#payment-con" aria-expanded="false" aria-controls="payment-con">Proceed to Payment</a>
 										</h3>
 										<div class="payment-content collapse" id="payment-con">
-											<p>Your order will be delivered to your doorstep after which you make payment. Please use your Order ID as the payment reference. We only accept payment in <strong>cash</strong> or via <strong>bank transfer</strong> upon delivery.</p>
+											<p>Your order will be delivered to your doorstep after which you make payment. Please use your Order ID as the payment reference. We only accept payment in <strong>cash</strong> or via <strong>bank transfer</strong> before delivery.</p>
 											<div class="order-button-payment">
-										      <input type="submit" class="i-pay" data-tope="i-bank" value="Pay on delivery" />
+										      <input type="submit" class="i-pay" data-tope="i-bank" value="Proceed to Payment" />
 									        </div>											
 										</div>
 										<!-- ACCORDION END -->	
-										<!-- ACCORDION START -->
+										<!-- ACCORDION START --
 										<h3>
 											<a class="collapsed" role="button" data-toggle="collapse" href="#payment-con2" aria-expanded="false" aria-controls="payment-con2">Pay Online</a>
 										</h3>

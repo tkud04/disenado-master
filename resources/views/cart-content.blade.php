@@ -64,7 +64,7 @@
 											<tbody>
 												<tr class="cart-subtotal">
 													<th>Subtotal</th>
-													<td><span class="amount">">&#8358;{{$ct}}.00</span></td>
+													<td><span class="amount">&#8358;{{$ct}}.00</span></td>
 												</tr>
 												<tr class="shipping">
 													<th>Shipping</th>
