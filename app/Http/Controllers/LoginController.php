@@ -52,6 +52,12 @@ class LoginController extends Controller {
                if($user->role == "admin"){return redirect()->intended('/');}
                else{return redirect()->intended('/');}
             }
+			
+			else
+			{
+				Session::flash("login-status","error");
+				return redirect()->intended('/');
+			}
          }        
     }
 	

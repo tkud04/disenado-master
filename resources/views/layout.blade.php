@@ -6,8 +6,12 @@
                           @include('input-errors', ["errors" => $errors])
                      @endif   
                     
-@if(Session::has('signup-status') && Session::get('signup-status') == "success")
+     @if(Session::has('signup-status') && Session::get('signup-status') == "success")
 			 <center><div class="alert alert-success">Signup successful! <a href="#" class="legbe">Click here</a> to login and verify your account.</div></center>
+			@endif
+			
+     @if(Session::has('login-status') && Session::get('login-status') == "error")
+			 <center><div class="alert alert-danger">Invalid username or password. <a href="#" class="legbe">Click here</a> to try again.</div></center>
 			@endif
 			
     @if(Session::has('cart-status') && Session::get('cart-status') == "new-user")
