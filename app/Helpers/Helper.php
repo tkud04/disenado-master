@@ -35,7 +35,7 @@ class Helper implements HelperContract
 								   ["img"=>"img/bina/banner-phones-2.jpg","url"=>"shop"],
 		                         ];
 								 
-         protected $slideBanner = $laneBanner;
+         protected $slideBanner = $this->laneBanner;
          
 		 protected $brands = ["img/brand/brand3.png",
 		                      "img/brand/brand4.png",
