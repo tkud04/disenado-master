@@ -357,7 +357,7 @@ class MainController extends Controller {
 		}
 			
 		$req = $request->all();
-        dd($rerq);
+        dd($req);
 		
         $validator = Validator::make($req, [
                              'term' => 'required',

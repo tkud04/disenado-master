@@ -609,7 +609,7 @@
 												{{$p['name']}} <strong class="product-quantity"> x {{$c['qty']}}</strong>
 												</td>
 												<td class="product-total">
-													<span class="amount">{{$price}}</span>
+													<span class="amount">&#8358;{{$price}}.00</span>
 												</td>
 											</tr>
 											@endforeach
@@ -617,7 +617,7 @@
 										<tfoot>
 											<tr class="cart-subtotal">
 												<th>Cart Subtotal</th>
-												<td><span class="amount">&#8358;{{$ct}}</span></td>
+												<td><span class="amount">&#8358;{{$ct}}.00</span></td>
 											</tr>
 											<tr class="shipping">
 												<th>Shipping</th>
@@ -635,7 +635,7 @@
 											</tr>
 											<tr class="order-total">
 												<th>Order Total</th>
-												<td><strong><span class="amount" id="yuu">{{$ct + 1500}}</span></strong></strong>
+												<td><strong><span class="amount" id="yuu">&#8358;{{$ct + 1500}}.00</span></strong></strong>
 												</td>
 											</tr>								
 										</tfoot>
@@ -648,7 +648,7 @@
 											<a class="collapsed" role="button" data-toggle="collapse" href="#payment-con" aria-expanded="false" aria-controls="payment-con">Proceed to Payment</a>
 										</h3>
 										<div class="payment-content collapse" id="payment-con">
-											<p>Your order will be delivered to your doorstep after which you make payment. Please use your Order ID as the payment reference. We only accept payment in <strong>cash</strong> or via <strong>bank transfer</strong> before delivery.</p>
+											<p>Your order will be delivered to your doorstep after you've made payment. Please use your Order ID as the payment reference. We only accept payment in <strong>cash</strong> or via <strong>bank transfer</strong> before delivery.</p>
 											<div class="order-button-payment">
 										      <input type="submit" class="i-pay" data-tope="i-bank" value="Proceed to Payment" />
 									        </div>											
