@@ -61,6 +61,26 @@ class MainController extends Controller {
         $displaySize  = $this->helpers->isMobile() ? 3 : 4;
     	return view('index',compact(['cart','user','bs','os','ss','trending','slideBanner','laneBanner','brands','displaySize']));
     }
+    
+    
+    /**
+	 * Show the application Umbrella screen to the user.
+	 *
+	 * @return Response
+	 */
+	public function getUmbrella()
+    {
+		$user = null;
+		$cart = [];
+		
+		if(Auth::check())
+		{
+			$user = Auth::user();
+		    $cart = $this->helpers->getCart($user);
+    	    return view('cart',compact(['cart','user']));
+		}
+		return view('umbrella',compact(['cart','user']));
+    }
 	
 	
 	/**
