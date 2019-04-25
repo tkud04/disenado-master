@@ -1,5 +1,7 @@
 @include("head")
 
+@section('title',"Welcome")
+
 		<!-- Main content  -->
 		<div class="contact-body">
 			<div class="container">
@@ -15,7 +17,7 @@
 								<div class="card bg-dark text-white">
   <img src="img/nebe/it.jpg" class="card-img" alt="...">
   <div class="card-img-overlay">
-    <a class="btn btn-primary btn-lg">Go to IT Services</p>
+    <a class="btn btn-primary btn-lg" href="{{url('software')}}">Go to IT Services</a>
   </div>
 </div>
 							</div>
@@ -25,7 +27,7 @@
 								<div class="card bg-dark text-white">
   <img src="img/nebe/shop.jpg" class="card-img" alt="...">
   <div class="card-img-overlay">
-    <a class="btn btn-primary btn-lg">Go to Online Shop</p>
+    <a class="btn btn-primary btn-lg" href="{{url('store')}}">Go to Online Store</a>
   </div>
 </div>
 							</div>
