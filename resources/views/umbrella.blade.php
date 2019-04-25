@@ -13,7 +13,7 @@
 						<div class="col-md-6 col-sm-6 col-xs-12">
 							<div class="content">
 								<div class="card bg-dark text-white">
-  <img src="img/it.png" class="card-img" alt="...">
+  <img src="img/nebe/it.jpg" class="card-img" alt="...">
   <div class="card-img-overlay">
     <a class="btn btn-primary btn-lg">Go to IT Services</p>
   </div>
@@ -23,7 +23,7 @@
 						<div class="col-md-6 col-sm-6 col-xs-12">
 							<div class="content">
 								<div class="card bg-dark text-white">
-  <img src="img/shop.png" class="card-img" alt="...">
+  <img src="img/nebe/shop.jpg" class="card-img" alt="...">
   <div class="card-img-overlay">
     <a class="btn btn-primary btn-lg">Go to Online Shop</p>
   </div>
