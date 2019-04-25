@@ -13,6 +13,7 @@
 
 Route::get('/', 'MainController@index');
 Route::get('sps', 'MainController@getMessage');
+Route::get('umbrella', 'MainController@getUmbrella');
 
 Route::post('login', 'LoginController@postLogin');
 Route::post('register', 'LoginController@postRegister');
