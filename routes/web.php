@@ -11,9 +11,9 @@
 |
 */
 
-Route::get('store', 'MainController@index');
+Route::get('/', 'MainController@index');
 Route::get('sps', 'MainController@getMessage');
-Route::get('/', 'MainController@getUmbrella');
+Route::get('umbrella', 'MainController@getUmbrella');
 Route::get('software', 'MainController@getSoftware');
 
 Route::post('login', 'LoginController@postLogin');
